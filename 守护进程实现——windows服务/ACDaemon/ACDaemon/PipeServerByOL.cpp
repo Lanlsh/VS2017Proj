@@ -109,6 +109,8 @@ void PipeServerByOL::StartPipeServer()
 					DisconnectAndReconnect(i);
 					continue;
 				}
+
+				m_pipe[i].fPendingIO = FALSE;
 				m_pipe[i].cbRead = cbRet;
 				m_pipe[i].dwState = PIPE_WRITING_STATE;
 				break;
