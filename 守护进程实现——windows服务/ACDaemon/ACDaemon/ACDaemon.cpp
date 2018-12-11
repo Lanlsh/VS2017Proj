@@ -22,7 +22,7 @@ void StopPipeServer();
 //	主服务信息
 char serviceName_Main[] = "MemoryStatus";
 char serviceExePath_Main[] = "E:/lanliangsheng/VS2017Proj/ServiceTest/Debug/ServiceTest.exe";
-char logPath[] = "C://Users//Public//Documents//ACDaemon_Log.txt";
+char logPath[] = "C:/Users/Public/Documents/ACDaemon_Log.txt"; //路劲或为"C:\\Users\\Public\\Documents\\ACDaemon_Log.txt"	//(使用\为“\\”!!!)
 
 CDaemon daemon(serviceName_Main, serviceExePath_Main, logPath);
 PipeServerByOL* pipeServer = NULL;
