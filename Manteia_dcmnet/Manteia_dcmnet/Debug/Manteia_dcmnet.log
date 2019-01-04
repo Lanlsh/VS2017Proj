@@ -1,0 +1,89 @@
+﻿  stdafx.cpp
+  CProcessCFIND.cpp
+e:\lanliangsheng\dcmtk\dcmtk-3.6.2\oflog\include\dcmtk\oflog\logmacro.h(107): warning C4477: “sprintf”: 格式字符串“%ws”需要类型“wchar_t *”的参数，但可变参数 1 拥有了类型“const dcmtk::log4cplus::tchar *”
+  e:\lanliangsheng\dcmtk\dcmtk-3.6.2\oflog\include\dcmtk\oflog\logmacro.h(107): note: 请考虑在格式字符串中使用“%hs”
+  e:\lanliangsheng\dcmtk\dcmtk-3.6.2\oflog\include\dcmtk\oflog\logmacro.h(107): note: 请考虑在格式字符串中使用“%s”
+  e:\lanliangsheng\dcmtk\dcmtk-3.6.2\oflog\include\dcmtk\oflog\logmacro.h(107): note: 请考虑在格式字符串中使用“%Ts”
+e:\lanliangsheng\vs2017proj\manteia_dcmnet\manteia_dcmnet\storescu.h(7): warning C4275: 非 dll 接口 class“DcmStorageSCU”用作 dll 接口 class“CStoreSCU”的基
+  e:\lanliangsheng\dcmtk\dcmtk-3.6.2\dcmnet\include\dcmtk\dcmnet\dstorscu.h(57): note: 参见“DcmStorageSCU”的声明
+  e:\lanliangsheng\vs2017proj\manteia_dcmnet\manteia_dcmnet\storescu.h(6): note: 参见“CStoreSCU”的声明
+e:\lanliangsheng\vs2017proj\manteia_dcmnet\manteia_dcmnet\cprocesscfind.cpp(69): warning C4018: “<”: 有符号/无符号不匹配
+  CProcessCGET.cpp
+e:\lanliangsheng\dcmtk\dcmtk-3.6.2\oflog\include\dcmtk\oflog\logmacro.h(107): warning C4477: “sprintf”: 格式字符串“%ws”需要类型“wchar_t *”的参数，但可变参数 1 拥有了类型“const dcmtk::log4cplus::tchar *”
+  e:\lanliangsheng\dcmtk\dcmtk-3.6.2\oflog\include\dcmtk\oflog\logmacro.h(107): note: 请考虑在格式字符串中使用“%hs”
+  e:\lanliangsheng\dcmtk\dcmtk-3.6.2\oflog\include\dcmtk\oflog\logmacro.h(107): note: 请考虑在格式字符串中使用“%s”
+  e:\lanliangsheng\dcmtk\dcmtk-3.6.2\oflog\include\dcmtk\oflog\logmacro.h(107): note: 请考虑在格式字符串中使用“%Ts”
+e:\lanliangsheng\vs2017proj\manteia_dcmnet\manteia_dcmnet\storescu.h(7): warning C4275: 非 dll 接口 class“DcmStorageSCU”用作 dll 接口 class“CStoreSCU”的基
+  e:\lanliangsheng\dcmtk\dcmtk-3.6.2\dcmnet\include\dcmtk\dcmnet\dstorscu.h(57): note: 参见“DcmStorageSCU”的声明
+  e:\lanliangsheng\vs2017proj\manteia_dcmnet\manteia_dcmnet\storescu.h(6): note: 参见“CStoreSCU”的声明
+e:\lanliangsheng\vs2017proj\manteia_dcmnet\manteia_dcmnet\cprocesscget.cpp(76): warning C4018: “<”: 有符号/无符号不匹配
+  CProcessCMOVE.cpp
+e:\lanliangsheng\dcmtk\dcmtk-3.6.2\oflog\include\dcmtk\oflog\logmacro.h(107): warning C4477: “sprintf”: 格式字符串“%ws”需要类型“wchar_t *”的参数，但可变参数 1 拥有了类型“const dcmtk::log4cplus::tchar *”
+  e:\lanliangsheng\dcmtk\dcmtk-3.6.2\oflog\include\dcmtk\oflog\logmacro.h(107): note: 请考虑在格式字符串中使用“%hs”
+  e:\lanliangsheng\dcmtk\dcmtk-3.6.2\oflog\include\dcmtk\oflog\logmacro.h(107): note: 请考虑在格式字符串中使用“%s”
+  e:\lanliangsheng\dcmtk\dcmtk-3.6.2\oflog\include\dcmtk\oflog\logmacro.h(107): note: 请考虑在格式字符串中使用“%Ts”
+e:\lanliangsheng\vs2017proj\manteia_dcmnet\manteia_dcmnet\storescu.h(7): warning C4275: 非 dll 接口 class“DcmStorageSCU”用作 dll 接口 class“CStoreSCU”的基
+  e:\lanliangsheng\dcmtk\dcmtk-3.6.2\dcmnet\include\dcmtk\dcmnet\dstorscu.h(57): note: 参见“DcmStorageSCU”的声明
+  e:\lanliangsheng\vs2017proj\manteia_dcmnet\manteia_dcmnet\storescu.h(6): note: 参见“CStoreSCU”的声明
+e:\lanliangsheng\vs2017proj\manteia_dcmnet\manteia_dcmnet\cprocesscmove.cpp(71): warning C4018: “<”: 有符号/无符号不匹配
+  CProcessCommandBase.cpp
+  CProcessCSTORE.cpp
+e:\lanliangsheng\dcmtk\dcmtk-3.6.2\oflog\include\dcmtk\oflog\logmacro.h(107): warning C4477: “sprintf”: 格式字符串“%ws”需要类型“wchar_t *”的参数，但可变参数 1 拥有了类型“const dcmtk::log4cplus::tchar *”
+  e:\lanliangsheng\dcmtk\dcmtk-3.6.2\oflog\include\dcmtk\oflog\logmacro.h(107): note: 请考虑在格式字符串中使用“%hs”
+  e:\lanliangsheng\dcmtk\dcmtk-3.6.2\oflog\include\dcmtk\oflog\logmacro.h(107): note: 请考虑在格式字符串中使用“%s”
+  e:\lanliangsheng\dcmtk\dcmtk-3.6.2\oflog\include\dcmtk\oflog\logmacro.h(107): note: 请考虑在格式字符串中使用“%Ts”
+e:\lanliangsheng\vs2017proj\manteia_dcmnet\manteia_dcmnet\storescu.h(7): warning C4275: 非 dll 接口 class“DcmStorageSCU”用作 dll 接口 class“CStoreSCU”的基
+  e:\lanliangsheng\dcmtk\dcmtk-3.6.2\dcmnet\include\dcmtk\dcmnet\dstorscu.h(57): note: 参见“DcmStorageSCU”的声明
+  e:\lanliangsheng\vs2017proj\manteia_dcmnet\manteia_dcmnet\storescu.h(6): note: 参见“CStoreSCU”的声明
+  CStoreSCUForCGet.cpp
+e:\lanliangsheng\dcmtk\dcmtk-3.6.2\oflog\include\dcmtk\oflog\logmacro.h(107): warning C4477: “sprintf”: 格式字符串“%ws”需要类型“wchar_t *”的参数，但可变参数 1 拥有了类型“const dcmtk::log4cplus::tchar *”
+  e:\lanliangsheng\dcmtk\dcmtk-3.6.2\oflog\include\dcmtk\oflog\logmacro.h(107): note: 请考虑在格式字符串中使用“%hs”
+  e:\lanliangsheng\dcmtk\dcmtk-3.6.2\oflog\include\dcmtk\oflog\logmacro.h(107): note: 请考虑在格式字符串中使用“%s”
+  e:\lanliangsheng\dcmtk\dcmtk-3.6.2\oflog\include\dcmtk\oflog\logmacro.h(107): note: 请考虑在格式字符串中使用“%Ts”
+  dllmain.cpp
+  FindSCU.cpp
+e:\lanliangsheng\dcmtk\dcmtk-3.6.2\oflog\include\dcmtk\oflog\logmacro.h(107): warning C4477: “sprintf”: 格式字符串“%ws”需要类型“wchar_t *”的参数，但可变参数 1 拥有了类型“const dcmtk::log4cplus::tchar *”
+  e:\lanliangsheng\dcmtk\dcmtk-3.6.2\oflog\include\dcmtk\oflog\logmacro.h(107): note: 请考虑在格式字符串中使用“%hs”
+  e:\lanliangsheng\dcmtk\dcmtk-3.6.2\oflog\include\dcmtk\oflog\logmacro.h(107): note: 请考虑在格式字符串中使用“%s”
+  e:\lanliangsheng\dcmtk\dcmtk-3.6.2\oflog\include\dcmtk\oflog\logmacro.h(107): note: 请考虑在格式字符串中使用“%Ts”
+  GetSCU.cpp
+e:\lanliangsheng\dcmtk\dcmtk-3.6.2\oflog\include\dcmtk\oflog\logmacro.h(107): warning C4477: “sprintf”: 格式字符串“%ws”需要类型“wchar_t *”的参数，但可变参数 1 拥有了类型“const dcmtk::log4cplus::tchar *”
+  e:\lanliangsheng\dcmtk\dcmtk-3.6.2\oflog\include\dcmtk\oflog\logmacro.h(107): note: 请考虑在格式字符串中使用“%hs”
+  e:\lanliangsheng\dcmtk\dcmtk-3.6.2\oflog\include\dcmtk\oflog\logmacro.h(107): note: 请考虑在格式字符串中使用“%s”
+  e:\lanliangsheng\dcmtk\dcmtk-3.6.2\oflog\include\dcmtk\oflog\logmacro.h(107): note: 请考虑在格式字符串中使用“%Ts”
+  ManteiaSCP.cpp
+e:\lanliangsheng\dcmtk\dcmtk-3.6.2\oflog\include\dcmtk\oflog\logmacro.h(107): warning C4477: “sprintf”: 格式字符串“%ws”需要类型“wchar_t *”的参数，但可变参数 1 拥有了类型“const dcmtk::log4cplus::tchar *”
+  e:\lanliangsheng\dcmtk\dcmtk-3.6.2\oflog\include\dcmtk\oflog\logmacro.h(107): note: 请考虑在格式字符串中使用“%hs”
+  e:\lanliangsheng\dcmtk\dcmtk-3.6.2\oflog\include\dcmtk\oflog\logmacro.h(107): note: 请考虑在格式字符串中使用“%s”
+  e:\lanliangsheng\dcmtk\dcmtk-3.6.2\oflog\include\dcmtk\oflog\logmacro.h(107): note: 请考虑在格式字符串中使用“%Ts”
+e:\lanliangsheng\vs2017proj\manteia_dcmnet\manteia_dcmnet\storescu.h(7): warning C4275: 非 dll 接口 class“DcmStorageSCU”用作 dll 接口 class“CStoreSCU”的基
+  e:\lanliangsheng\dcmtk\dcmtk-3.6.2\dcmnet\include\dcmtk\dcmnet\dstorscu.h(57): note: 参见“DcmStorageSCU”的声明
+  e:\lanliangsheng\vs2017proj\manteia_dcmnet\manteia_dcmnet\storescu.h(6): note: 参见“CStoreSCU”的声明
+  Manteia_dcmnet.cpp
+  MoveSCU.cpp
+e:\lanliangsheng\dcmtk\dcmtk-3.6.2\oflog\include\dcmtk\oflog\logmacro.h(107): warning C4477: “sprintf”: 格式字符串“%ws”需要类型“wchar_t *”的参数，但可变参数 1 拥有了类型“const dcmtk::log4cplus::tchar *”
+  e:\lanliangsheng\dcmtk\dcmtk-3.6.2\oflog\include\dcmtk\oflog\logmacro.h(107): note: 请考虑在格式字符串中使用“%hs”
+  e:\lanliangsheng\dcmtk\dcmtk-3.6.2\oflog\include\dcmtk\oflog\logmacro.h(107): note: 请考虑在格式字符串中使用“%s”
+  e:\lanliangsheng\dcmtk\dcmtk-3.6.2\oflog\include\dcmtk\oflog\logmacro.h(107): note: 请考虑在格式字符串中使用“%Ts”
+  SCPBase.cpp
+e:\lanliangsheng\dcmtk\dcmtk-3.6.2\oflog\include\dcmtk\oflog\logmacro.h(107): warning C4477: “sprintf”: 格式字符串“%ws”需要类型“wchar_t *”的参数，但可变参数 1 拥有了类型“const dcmtk::log4cplus::tchar *”
+  e:\lanliangsheng\dcmtk\dcmtk-3.6.2\oflog\include\dcmtk\oflog\logmacro.h(107): note: 请考虑在格式字符串中使用“%hs”
+  e:\lanliangsheng\dcmtk\dcmtk-3.6.2\oflog\include\dcmtk\oflog\logmacro.h(107): note: 请考虑在格式字符串中使用“%s”
+  e:\lanliangsheng\dcmtk\dcmtk-3.6.2\oflog\include\dcmtk\oflog\logmacro.h(107): note: 请考虑在格式字符串中使用“%Ts”
+  SCUBase.cpp
+e:\lanliangsheng\dcmtk\dcmtk-3.6.2\oflog\include\dcmtk\oflog\logmacro.h(107): warning C4477: “sprintf”: 格式字符串“%ws”需要类型“wchar_t *”的参数，但可变参数 1 拥有了类型“const dcmtk::log4cplus::tchar *”
+  e:\lanliangsheng\dcmtk\dcmtk-3.6.2\oflog\include\dcmtk\oflog\logmacro.h(107): note: 请考虑在格式字符串中使用“%hs”
+  e:\lanliangsheng\dcmtk\dcmtk-3.6.2\oflog\include\dcmtk\oflog\logmacro.h(107): note: 请考虑在格式字符串中使用“%s”
+  e:\lanliangsheng\dcmtk\dcmtk-3.6.2\oflog\include\dcmtk\oflog\logmacro.h(107): note: 请考虑在格式字符串中使用“%Ts”
+  StoreSCU.cpp
+e:\lanliangsheng\dcmtk\dcmtk-3.6.2\oflog\include\dcmtk\oflog\logmacro.h(107): warning C4477: “sprintf”: 格式字符串“%ws”需要类型“wchar_t *”的参数，但可变参数 1 拥有了类型“const dcmtk::log4cplus::tchar *”
+  e:\lanliangsheng\dcmtk\dcmtk-3.6.2\oflog\include\dcmtk\oflog\logmacro.h(107): note: 请考虑在格式字符串中使用“%hs”
+  e:\lanliangsheng\dcmtk\dcmtk-3.6.2\oflog\include\dcmtk\oflog\logmacro.h(107): note: 请考虑在格式字符串中使用“%s”
+  e:\lanliangsheng\dcmtk\dcmtk-3.6.2\oflog\include\dcmtk\oflog\logmacro.h(107): note: 请考虑在格式字符串中使用“%Ts”
+e:\lanliangsheng\vs2017proj\manteia_dcmnet\manteia_dcmnet\storescu.h(7): warning C4275: 非 dll 接口 class“DcmStorageSCU”用作 dll 接口 class“CStoreSCU”的基
+  e:\lanliangsheng\dcmtk\dcmtk-3.6.2\dcmnet\include\dcmtk\dcmnet\dstorscu.h(57): note: 参见“DcmStorageSCU”的声明
+  e:\lanliangsheng\vs2017proj\manteia_dcmnet\manteia_dcmnet\storescu.h(6): note: 参见“CStoreSCU”的声明
+e:\lanliangsheng\vs2017proj\manteia_dcmnet\manteia_dcmnet\storescu.cpp(156): warning C4018: “<”: 有符号/无符号不匹配
+  正在生成代码...
+    正在创建库 ..\Debug\Manteia_dcmnet.lib 和对象 ..\Debug\Manteia_dcmnet.exp
+  Manteia_dcmnet.vcxproj -> E:\lanliangsheng\VS2017Proj\Manteia_dcmnet\Manteia_dcmnet\..\Debug\Manteia_dcmnet.dll
