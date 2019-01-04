@@ -1,0 +1,1869 @@
+[2018-01-31 09:16:42] - 
+192.168.1.100:59237 ---> 127.0.0.1:106 AA_RQ
+Calling AET: RADIANT         
+Called  AET: WPACS           
+ApplicationContextName: 1.2.840.10008.3.1.1.1
+Presentation Context ID: 1
+AbstractSyntaxName: 1.2.840.10008.5.1.4.1.2.2.1
+TransferSyntaxName: 1.2.840.10008.1.2.1
+TransferSyntaxName: 1.2.840.10008.1.2
+TransferSyntaxName: 1.2.840.10008.1.2.2
+TransferSyntaxName: 1.2.840.10008.1.2.4.70
+TransferSyntaxName: 1.2.840.10008.1.2.4.80
+TransferSyntaxName: 1.2.840.10008.1.2.4.90
+TransferSyntaxName: 1.2.840.10008.1.2.4.50
+TransferSyntaxName: 1.2.840.10008.1.2.4.51
+TransferSyntaxName: 1.2.840.10008.1.2.4.81
+TransferSyntaxName: 1.2.840.10008.1.2.4.91
+TransferSyntaxName: 1.2.840.10008.1.2.5
+TransferSyntaxName: 1.2.840.10008.1.2.4.100
+TransferSyntaxName: 1.2.840.10008.1.2.4.101
+TransferSyntaxName: 1.2.840.10008.1.2.4.102
+TransferSyntaxName: 1.2.840.10008.1.2.4.103
+Max Sub Length: 16384
+Implementation Class: 1.2.826.0.1.3680043.8.1223.1.2
+Implementation Version: RadiAnt-4.2.1
+
+[2018-01-31 09:16:43] - 
+127.0.0.1:106 ---> 192.168.1.100:59237 AA_AC
+Calling AET: RADIANT         
+Called  AET: WPACS           
+ApplicationContextName: 1.2.840.10008.3.1.1.1
+Presentation Context ID: 1
+PresContextAccept Result: Accept
+TransferSyntaxName: 1.2.840.10008.1.2.1
+Max Sub Length: 16384
+Implementation Class: 1.2.40.1.12.8008
+Implementation Version: WPACS0301
+
+[2018-01-31 09:16:43] - 
+192.168.1.100:59237 ---> 127.0.0.1:106 PDATATF - C_FIND_RQ
+Presentation Context ID: 1
+(0000,0002),UI,28,AffectedSOPClassUID	"1.2.840.10008.5.1.4.1.2.2.1"
+(0000,0100),US,2,CommandField	0032 
+(0000,0110),US,2,MessageID	0001 
+(0000,0700),US,2,Priority	0002 
+(0000,0800),US,2,DataSetType	0258 
+
+[2018-01-31 09:16:43] - 
+192.168.1.100:59237 ---> 127.0.0.1:106 PDATATF - DataSet
+Presentation Context ID: 1
+(0008,0020),DA,0,StudyDate	""
+(0008,0030),TM,0,StudyTime	""
+(0008,0050),SH,0,AccessionNumber	""
+(0008,0052),CS,6,Query/RetrieveLevel	"STUDY"
+(0008,0056),CS,0,IAN_Status	""
+(0008,0061),CS,2,ModalitiesinStudy	"CT"
+(0008,0080),LO,0,InstitutionName	""
+(0008,0090),PN,0,ReferringPhysicianName	""
+(0008,1030),LO,0,StudyDescription	""
+(0008,1040),LO,0,InstitutionalDepartmentName	""
+(0008,1050),PN,0,PerformingPhysicianName	""
+(0008,1060),PN,0,NameofPhysician(s)ReadingStudy	""
+(0010,0010),PN,0,PatientName	""
+(0010,0020),LO,0,PatientID	""
+(0010,0030),DA,0,Patient'sBirthDate	""
+(0010,0040),CS,0,Patient'sSex	""
+(0020,000d),UI,0,StudyInstanceUID	""
+(0020,0010),SH,0,StudyID	""
+(0020,1208),IS,0,NumberofStudyRelatedImages	""
+
+[2018-01-31 09:16:43] - 
+127.0.0.1:106 ---> 192.168.1.100:59237 PDATATF - C_FIND_RSP
+Presentation Context ID: 1
+(0000,0002),UI,28,AffectedSOPClassUID	"1.2.840.10008.5.1.4.1.2.2.1"
+(0000,0100),US,2,CommandField	32800 
+(0000,0120),US,2,MessageIDBeingRespondedTo	0001 
+(0000,0800),US,2,DataSetType	0258 
+(0000,0900),US,2,Status	65280 
+
+[2018-01-31 09:16:43] - 
+127.0.0.1:106 ---> 192.168.1.100:59237 PDATATF - DataSet
+Presentation Context ID: 1
+(0008,0005),CS,0,SpecificCharacterSet	""
+(0008,0020),DA,8,StudyDate	"20100629"
+(0008,0030),TM,0,StudyTime	""
+(0008,0050),SH,0,AccessionNumber	""
+(0008,0052),CS,6,Query/RetrieveLevel	"STUDY "
+(0008,0056),CS,0,IAN_Status	""
+(0008,0061),CS,2,ModalitiesinStudy	"CT"
+(0008,0080),LO,0,InstitutionName	""
+(0008,0090),PN,0,ReferringPhysicianName	""
+(0008,1030),LO,8,StudyDescription	"CARDIAC "
+(0008,1040),LO,0,InstitutionalDepartmentName	""
+(0008,1050),PN,0,PerformingPhysicianName	""
+(0008,1060),PN,0,NameofPhysician(s)ReadingStudy	""
+(0010,0010),PN,10,PatientName	"CARDIAC_01"
+(0010,0020),LO,10,PatientID	"CARDIAC_01"
+(0010,0030),DA,0,Patient'sBirthDate	""
+(0010,0040),CS,2,Patient'sSex	"M "
+(0020,000d),UI,54,StudyInstanceUID	"2.16.124.113543.6003.4094134040.35715.19154.1544720293"
+(0020,0010),SH,0,StudyID	""
+(0020,1208),IS,0,NumberofStudyRelatedImages	""
+
+[2018-01-31 09:16:43] - 
+127.0.0.1:106 ---> 192.168.1.100:59237 PDATATF - C_FIND_RSP
+Presentation Context ID: 1
+(0000,0002),UI,28,AffectedSOPClassUID	"1.2.840.10008.5.1.4.1.2.2.1"
+(0000,0100),US,2,CommandField	32800 
+(0000,0120),US,2,MessageIDBeingRespondedTo	0001 
+(0000,0800),US,2,DataSetType	0258 
+(0000,0900),US,2,Status	65280 
+
+[2018-01-31 09:16:43] - 
+127.0.0.1:106 ---> 192.168.1.100:59237 PDATATF - DataSet
+Presentation Context ID: 1
+(0008,0005),CS,0,SpecificCharacterSet	""
+(0008,0020),DA,8,StudyDate	"20171229"
+(0008,0030),TM,0,StudyTime	""
+(0008,0050),SH,0,AccessionNumber	""
+(0008,0052),CS,6,Query/RetrieveLevel	"STUDY "
+(0008,0056),CS,0,IAN_Status	""
+(0008,0061),CS,2,ModalitiesinStudy	"CT"
+(0008,0080),LO,0,InstitutionName	""
+(0008,0090),PN,0,ReferringPhysicianName	""
+(0008,1030),LO,18,StudyDescription	"Abdomen^AbdRoutine"
+(0008,1040),LO,0,InstitutionalDepartmentName	""
+(0008,1050),PN,0,PerformingPhysicianName	""
+(0008,1060),PN,0,NameofPhysician(s)ReadingStudy	""
+(0010,0010),PN,12,PatientName	"LI YANG DAO "
+(0010,0020),LO,6,PatientID	"018998"
+(0010,0030),DA,0,Patient'sBirthDate	""
+(0010,0040),CS,2,Patient'sSex	"M "
+(0020,000d),UI,46,StudyInstanceUID	"1.3.12.2.1107.5.1.4.34195.4.0.6414702122261894"
+(0020,0010),SH,2,StudyID	"1 "
+(0020,1208),IS,0,NumberofStudyRelatedImages	""
+
+[2018-01-31 09:16:43] - 
+127.0.0.1:106 ---> 192.168.1.100:59237 PDATATF - C_FIND_RSP
+Presentation Context ID: 1
+(0000,0002),UI,28,AffectedSOPClassUID	"1.2.840.10008.5.1.4.1.2.2.1"
+(0000,0100),US,2,CommandField	32800 
+(0000,0120),US,2,MessageIDBeingRespondedTo	0001 
+(0000,0800),US,2,DataSetType	0258 
+(0000,0900),US,2,Status	65280 
+
+[2018-01-31 09:16:43] - 
+127.0.0.1:106 ---> 192.168.1.100:59237 PDATATF - DataSet
+Presentation Context ID: 1
+(0008,0005),CS,0,SpecificCharacterSet	""
+(0008,0020),DA,8,StudyDate	"20171205"
+(0008,0030),TM,0,StudyTime	""
+(0008,0050),SH,0,AccessionNumber	""
+(0008,0052),CS,6,Query/RetrieveLevel	"STUDY "
+(0008,0056),CS,0,IAN_Status	""
+(0008,0061),CS,2,ModalitiesinStudy	"CT"
+(0008,0080),LO,0,InstitutionName	""
+(0008,0090),PN,0,ReferringPhysicianName	""
+(0008,1030),LO,0,StudyDescription	""
+(0008,1040),LO,0,InstitutionalDepartmentName	""
+(0008,1050),PN,0,PerformingPhysicianName	""
+(0008,1060),PN,0,NameofPhysician(s)ReadingStudy	""
+(0010,0010),PN,12,PatientName	"li feng chen"
+(0010,0020),LO,6,PatientID	"014505"
+(0010,0030),DA,0,Patient'sBirthDate	""
+(0010,0040),CS,2,Patient'sSex	"M "
+(0020,000d),UI,44,StudyInstanceUID	"1.2.840.113704.9.1000.16.0.20171205112212000"
+(0020,0010),SH,6,StudyID	"012476"
+(0020,1208),IS,0,NumberofStudyRelatedImages	""
+
+[2018-01-31 09:16:43] - 
+127.0.0.1:106 ---> 192.168.1.100:59237 PDATATF - C_FIND_RSP
+Presentation Context ID: 1
+(0000,0002),UI,28,AffectedSOPClassUID	"1.2.840.10008.5.1.4.1.2.2.1"
+(0000,0100),US,2,CommandField	32800 
+(0000,0120),US,2,MessageIDBeingRespondedTo	0001 
+(0000,0800),US,2,DataSetType	0258 
+(0000,0900),US,2,Status	65280 
+
+[2018-01-31 09:16:43] - 
+127.0.0.1:106 ---> 192.168.1.100:59237 PDATATF - DataSet
+Presentation Context ID: 1
+(0008,0005),CS,0,SpecificCharacterSet	""
+(0008,0020),DA,8,StudyDate	"20171101"
+(0008,0030),TM,0,StudyTime	""
+(0008,0050),SH,14,AccessionNumber	"20171101000094"
+(0008,0052),CS,6,Query/RetrieveLevel	"STUDY "
+(0008,0056),CS,0,IAN_Status	""
+(0008,0061),CS,2,ModalitiesinStudy	"CT"
+(0008,0080),LO,0,InstitutionName	""
+(0008,0090),PN,0,ReferringPhysicianName	""
+(0008,1030),LO,8,StudyDescription	"ABDOMEN "
+(0008,1040),LO,0,InstitutionalDepartmentName	""
+(0008,1050),PN,0,PerformingPhysicianName	""
+(0008,1060),PN,0,NameofPhysician(s)ReadingStudy	""
+(0010,0010),PN,12,PatientName	"DENG RUI JU "
+(0010,0020),LO,12,PatientID	"CT171101015 "
+(0010,0030),DA,0,Patient'sBirthDate	""
+(0010,0040),CS,2,Patient'sSex	"F "
+(0020,000d),UI,38,StudyInstanceUID	"1.2.840.113704.1.111.5688.1509496342.1"
+(0020,0010),SH,6,StudyID	"83178 "
+(0020,1208),IS,0,NumberofStudyRelatedImages	""
+
+[2018-01-31 09:16:43] - 
+127.0.0.1:106 ---> 192.168.1.100:59237 PDATATF - C_FIND_RSP
+Presentation Context ID: 1
+(0000,0002),UI,28,AffectedSOPClassUID	"1.2.840.10008.5.1.4.1.2.2.1"
+(0000,0100),US,2,CommandField	32800 
+(0000,0120),US,2,MessageIDBeingRespondedTo	0001 
+(0000,0800),US,2,DataSetType	0258 
+(0000,0900),US,2,Status	65280 
+
+[2018-01-31 09:16:43] - 
+127.0.0.1:106 ---> 192.168.1.100:59237 PDATATF - DataSet
+Presentation Context ID: 1
+(0008,0005),CS,0,SpecificCharacterSet	""
+(0008,0020),DA,8,StudyDate	"20171201"
+(0008,0030),TM,0,StudyTime	""
+(0008,0050),SH,16,AccessionNumber	"171201112513121 "
+(0008,0052),CS,6,Query/RetrieveLevel	"STUDY "
+(0008,0056),CS,0,IAN_Status	""
+(0008,0061),CS,6,ModalitiesinStudy	"CT\SR "
+(0008,0080),LO,0,InstitutionName	""
+(0008,0090),PN,0,ReferringPhysicianName	""
+(0008,1030),LO,2,StudyDescription	"11"
+(0008,1040),LO,0,InstitutionalDepartmentName	""
+(0008,1050),PN,0,PerformingPhysicianName	""
+(0008,1060),PN,0,NameofPhysician(s)ReadingStudy	""
+(0010,0010),PN,8,PatientName	"SUJIAYI "
+(0010,0020),LO,8,PatientID	"21103127"
+(0010,0030),DA,0,Patient'sBirthDate	""
+(0010,0040),CS,2,Patient'sSex	"M "
+(0020,000d),UI,52,StudyInstanceUID	"1.2.12.28766.21103127.20171201112513.171201112513121"
+(0020,0010),SH,4,StudyID	"209 "
+(0020,1208),IS,0,NumberofStudyRelatedImages	""
+
+[2018-01-31 09:16:43] - 
+127.0.0.1:106 ---> 192.168.1.100:59237 PDATATF - C_FIND_RSP
+Presentation Context ID: 1
+(0000,0002),UI,28,AffectedSOPClassUID	"1.2.840.10008.5.1.4.1.2.2.1"
+(0000,0100),US,2,CommandField	32800 
+(0000,0120),US,2,MessageIDBeingRespondedTo	0001 
+(0000,0800),US,2,DataSetType	0258 
+(0000,0900),US,2,Status	65280 
+
+[2018-01-31 09:16:43] - 
+127.0.0.1:106 ---> 192.168.1.100:59237 PDATATF - DataSet
+Presentation Context ID: 1
+(0008,0005),CS,0,SpecificCharacterSet	""
+(0008,0020),DA,8,StudyDate	"20171201"
+(0008,0030),TM,0,StudyTime	""
+(0008,0050),SH,16,AccessionNumber	"171201113159122 "
+(0008,0052),CS,6,Query/RetrieveLevel	"STUDY "
+(0008,0056),CS,0,IAN_Status	""
+(0008,0061),CS,6,ModalitiesinStudy	"CT\SR "
+(0008,0080),LO,0,InstitutionName	""
+(0008,0090),PN,0,ReferringPhysicianName	""
+(0008,1030),LO,2,StudyDescription	"11"
+(0008,1040),LO,0,InstitutionalDepartmentName	""
+(0008,1050),PN,0,PerformingPhysicianName	""
+(0008,1060),PN,0,NameofPhysician(s)ReadingStudy	""
+(0010,0010),PN,8,PatientName	"FULIPING"
+(0010,0020),LO,8,PatientID	"21103128"
+(0010,0030),DA,0,Patient'sBirthDate	""
+(0010,0040),CS,2,Patient'sSex	"F "
+(0020,000d),UI,52,StudyInstanceUID	"1.2.12.28766.21103128.20171201113159.171201113159122"
+(0020,0010),SH,4,StudyID	"210 "
+(0020,1208),IS,0,NumberofStudyRelatedImages	""
+
+[2018-01-31 09:16:43] - 
+127.0.0.1:106 ---> 192.168.1.100:59237 PDATATF - C_FIND_RSP
+Presentation Context ID: 1
+(0000,0002),UI,28,AffectedSOPClassUID	"1.2.840.10008.5.1.4.1.2.2.1"
+(0000,0100),US,2,CommandField	32800 
+(0000,0120),US,2,MessageIDBeingRespondedTo	0001 
+(0000,0800),US,2,DataSetType	0258 
+(0000,0900),US,2,Status	65280 
+
+[2018-01-31 09:16:43] - 
+127.0.0.1:106 ---> 192.168.1.100:59237 PDATATF - DataSet
+Presentation Context ID: 1
+(0008,0005),CS,0,SpecificCharacterSet	""
+(0008,0020),DA,8,StudyDate	"20171113"
+(0008,0030),TM,0,StudyTime	""
+(0008,0050),SH,0,AccessionNumber	""
+(0008,0052),CS,6,Query/RetrieveLevel	"STUDY "
+(0008,0056),CS,0,IAN_Status	""
+(0008,0061),CS,2,ModalitiesinStudy	"CT"
+(0008,0080),LO,0,InstitutionName	""
+(0008,0090),PN,0,ReferringPhysicianName	""
+(0008,1030),LO,24,StudyDescription	"Spine_01 Ñü×µÂÝÐý(Adult)"
+(0008,1040),LO,0,InstitutionalDepartmentName	""
+(0008,1050),PN,0,PerformingPhysicianName	""
+(0008,1060),PN,0,NameofPhysician(s)ReadingStudy	""
+(0010,0010),PN,6,PatientName	"ºÎ½­½¢"
+(0010,0020),LO,4,PatientID	"0021"
+(0010,0030),DA,0,Patient'sBirthDate	""
+(0010,0040),CS,2,Patient'sSex	"M "
+(0020,000d),UI,64,StudyInstanceUID	"2.16.840.1.113662.2.1.99999.792895723568740314757424264361782547"
+(0020,0010),SH,8,StudyID	"P101130 "
+(0020,1208),IS,0,NumberofStudyRelatedImages	""
+
+[2018-01-31 09:16:43] - 
+127.0.0.1:106 ---> 192.168.1.100:59237 PDATATF - C_FIND_RSP
+Presentation Context ID: 1
+(0000,0002),UI,28,AffectedSOPClassUID	"1.2.840.10008.5.1.4.1.2.2.1"
+(0000,0100),US,2,CommandField	32800 
+(0000,0120),US,2,MessageIDBeingRespondedTo	0001 
+(0000,0800),US,2,DataSetType	0258 
+(0000,0900),US,2,Status	65280 
+
+[2018-01-31 09:16:43] - 
+127.0.0.1:106 ---> 192.168.1.100:59237 PDATATF - DataSet
+Presentation Context ID: 1
+(0008,0005),CS,0,SpecificCharacterSet	""
+(0008,0020),DA,8,StudyDate	"20171012"
+(0008,0030),TM,0,StudyTime	""
+(0008,0050),SH,12,AccessionNumber	"201710120005"
+(0008,0052),CS,6,Query/RetrieveLevel	"STUDY "
+(0008,0056),CS,0,IAN_Status	""
+(0008,0061),CS,2,ModalitiesinStudy	"CT"
+(0008,0080),LO,0,InstitutionName	""
+(0008,0090),PN,0,ReferringPhysicianName	""
+(0008,1030),LO,8,StudyDescription	"XB+QF+YZ"
+(0008,1040),LO,0,InstitutionalDepartmentName	""
+(0008,1050),PN,0,PerformingPhysicianName	""
+(0008,1060),PN,0,NameofPhysician(s)ReadingStudy	""
+(0010,0010),PN,8,PatientName	"Yi Long "
+(0010,0020),LO,12,PatientID	"201710120005"
+(0010,0030),DA,0,Patient'sBirthDate	""
+(0010,0040),CS,2,Patient'sSex	"M "
+(0020,000d),UI,40,StudyInstanceUID	"1.2.840.113704.1.111.10156.1507746773.1"
+(0020,0010),SH,6,StudyID	"59930 "
+(0020,1208),IS,0,NumberofStudyRelatedImages	""
+
+[2018-01-31 09:16:43] - 
+127.0.0.1:106 ---> 192.168.1.100:59237 PDATATF - C_FIND_RSP
+Presentation Context ID: 1
+(0000,0002),UI,28,AffectedSOPClassUID	"1.2.840.10008.5.1.4.1.2.2.1"
+(0000,0100),US,2,CommandField	32800 
+(0000,0120),US,2,MessageIDBeingRespondedTo	0001 
+(0000,0800),US,2,DataSetType	0258 
+(0000,0900),US,2,Status	65280 
+
+[2018-01-31 09:16:43] - 
+127.0.0.1:106 ---> 192.168.1.100:59237 PDATATF - DataSet
+Presentation Context ID: 1
+(0008,0005),CS,0,SpecificCharacterSet	""
+(0008,0020),DA,8,StudyDate	"20171012"
+(0008,0030),TM,0,StudyTime	""
+(0008,0050),SH,14,AccessionNumber	"03171011152017"
+(0008,0052),CS,6,Query/RetrieveLevel	"STUDY "
+(0008,0056),CS,0,IAN_Status	""
+(0008,0061),CS,2,ModalitiesinStudy	"CT"
+(0008,0080),LO,0,InstitutionName	""
+(0008,0090),PN,0,ReferringPhysicianName	""
+(0008,1030),LO,32,StudyDescription	"Thorax^2_ThoraxRoutineCE (Adult)"
+(0008,1040),LO,0,InstitutionalDepartmentName	""
+(0008,1050),PN,0,PerformingPhysicianName	""
+(0008,1060),PN,0,NameofPhysician(s)ReadingStudy	""
+(0010,0010),PN,14,PatientName	"YU SHUANG QUAN"
+(0010,0020),LO,10,PatientID	"0020529482"
+(0010,0030),DA,0,Patient'sBirthDate	""
+(0010,0040),CS,2,Patient'sSex	"M "
+(0020,000d),UI,54,StudyInstanceUID	"1.2.840.113619.186.808617694164.20171012074017405.610"
+(0020,0010),SH,4,StudyID	"1191"
+(0020,1208),IS,0,NumberofStudyRelatedImages	""
+
+[2018-01-31 09:16:43] - 
+127.0.0.1:106 ---> 192.168.1.100:59237 PDATATF - C_FIND_RSP
+Presentation Context ID: 1
+(0000,0002),UI,28,AffectedSOPClassUID	"1.2.840.10008.5.1.4.1.2.2.1"
+(0000,0100),US,2,CommandField	32800 
+(0000,0120),US,2,MessageIDBeingRespondedTo	0001 
+(0000,0800),US,2,DataSetType	0258 
+(0000,0900),US,2,Status	65280 
+
+[2018-01-31 09:16:43] - 
+127.0.0.1:106 ---> 192.168.1.100:59237 PDATATF - DataSet
+Presentation Context ID: 1
+(0008,0005),CS,0,SpecificCharacterSet	""
+(0008,0020),DA,8,StudyDate	"20090904"
+(0008,0030),TM,0,StudyTime	""
+(0008,0050),SH,0,AccessionNumber	""
+(0008,0052),CS,6,Query/RetrieveLevel	"STUDY "
+(0008,0056),CS,0,IAN_Status	""
+(0008,0061),CS,2,ModalitiesinStudy	"CT"
+(0008,0080),LO,0,InstitutionName	""
+(0008,0090),PN,0,ReferringPhysicianName	""
+(0008,1030),LO,24,StudyDescription	"Head^InnerEarHR (Adult) "
+(0008,1040),LO,0,InstitutionalDepartmentName	""
+(0008,1050),PN,0,PerformingPhysicianName	""
+(0008,1060),PN,0,NameofPhysician(s)ReadingStudy	""
+(0010,0010),PN,4,PatientName	"ÍõÎ°"
+(0010,0020),LO,8,PatientID	"09-8590 "
+(0010,0030),DA,0,Patient'sBirthDate	""
+(0010,0040),CS,2,Patient'sSex	"M "
+(0020,000d),UI,34,StudyInstanceUID	"1.3.1890.20090904.1104536.1658211"
+(0020,0010),SH,14,StudyID	"RP090904104536"
+(0020,1208),IS,0,NumberofStudyRelatedImages	""
+
+[2018-01-31 09:16:43] - 
+127.0.0.1:106 ---> 192.168.1.100:59237 PDATATF - C_FIND_RSP
+Presentation Context ID: 1
+(0000,0002),UI,28,AffectedSOPClassUID	"1.2.840.10008.5.1.4.1.2.2.1"
+(0000,0100),US,2,CommandField	32800 
+(0000,0120),US,2,MessageIDBeingRespondedTo	0001 
+(0000,0800),US,2,DataSetType	0258 
+(0000,0900),US,2,Status	65280 
+
+[2018-01-31 09:16:43] - 
+127.0.0.1:106 ---> 192.168.1.100:59237 PDATATF - DataSet
+Presentation Context ID: 1
+(0008,0005),CS,0,SpecificCharacterSet	""
+(0008,0020),DA,8,StudyDate	"20170930"
+(0008,0030),TM,0,StudyTime	""
+(0008,0050),SH,8,AccessionNumber	"2205446 "
+(0008,0052),CS,6,Query/RetrieveLevel	"STUDY "
+(0008,0056),CS,0,IAN_Status	""
+(0008,0061),CS,2,ModalitiesinStudy	"CT"
+(0008,0080),LO,0,InstitutionName	""
+(0008,0090),PN,0,ReferringPhysicianName	""
+(0008,1030),LO,6,StudyDescription	"Chest "
+(0008,1040),LO,0,InstitutionalDepartmentName	""
+(0008,1050),PN,0,PerformingPhysicianName	""
+(0008,1060),PN,0,NameofPhysician(s)ReadingStudy	""
+(0010,0010),PN,22,PatientName	"YU SHUANG QUAN(Ó÷Ë«È«)"
+(0010,0020),LO,8,PatientID	"3768322 "
+(0010,0030),DA,0,Patient'sBirthDate	""
+(0010,0040),CS,2,Patient'sSex	"M "
+(0020,000d),UI,46,StudyInstanceUID	"1.2.840.31314.14143234.20170930000000.2205446"
+(0020,0010),SH,6,StudyID	"85910 "
+(0020,1208),IS,0,NumberofStudyRelatedImages	""
+
+[2018-01-31 09:16:43] - 
+127.0.0.1:106 ---> 192.168.1.100:59237 PDATATF - C_FIND_RSP
+Presentation Context ID: 1
+(0000,0002),UI,28,AffectedSOPClassUID	"1.2.840.10008.5.1.4.1.2.2.1"
+(0000,0100),US,2,CommandField	32800 
+(0000,0120),US,2,MessageIDBeingRespondedTo	0001 
+(0000,0800),US,2,DataSetType	0258 
+(0000,0900),US,2,Status	65280 
+
+[2018-01-31 09:16:43] - 
+127.0.0.1:106 ---> 192.168.1.100:59237 PDATATF - DataSet
+Presentation Context ID: 1
+(0008,0005),CS,0,SpecificCharacterSet	""
+(0008,0020),DA,8,StudyDate	"20161005"
+(0008,0030),TM,0,StudyTime	""
+(0008,0050),SH,0,AccessionNumber	""
+(0008,0052),CS,6,Query/RetrieveLevel	"STUDY "
+(0008,0056),CS,0,IAN_Status	""
+(0008,0061),CS,2,ModalitiesinStudy	"CT"
+(0008,0080),LO,0,InstitutionName	""
+(0008,0090),PN,0,ReferringPhysicianName	""
+(0008,1030),LO,32,StudyDescription	"Thorax^ThoraxRoutine_JH (Adult) "
+(0008,1040),LO,0,InstitutionalDepartmentName	""
+(0008,1050),PN,0,PerformingPhysicianName	""
+(0008,1060),PN,0,NameofPhysician(s)ReadingStudy	""
+(0010,0010),PN,12,PatientName	"CHEN CI KUN "
+(0010,0020),LO,12,PatientID	"201610050005"
+(0010,0030),DA,0,Patient'sBirthDate	""
+(0010,0040),CS,2,Patient'sSex	"M "
+(0020,000d),UI,56,StudyInstanceUID	"1.3.12.2.1107.5.1.4.85519.30000016091800305506200000427"
+(0020,0010),SH,2,StudyID	"1 "
+(0020,1208),IS,0,NumberofStudyRelatedImages	""
+
+[2018-01-31 09:16:43] - 
+127.0.0.1:106 ---> 192.168.1.100:59237 PDATATF - C_FIND_RSP
+Presentation Context ID: 1
+(0000,0002),UI,28,AffectedSOPClassUID	"1.2.840.10008.5.1.4.1.2.2.1"
+(0000,0100),US,2,CommandField	32800 
+(0000,0120),US,2,MessageIDBeingRespondedTo	0001 
+(0000,0800),US,2,DataSetType	0258 
+(0000,0900),US,2,Status	65280 
+
+[2018-01-31 09:16:43] - 
+127.0.0.1:106 ---> 192.168.1.100:59237 PDATATF - DataSet
+Presentation Context ID: 1
+(0008,0005),CS,0,SpecificCharacterSet	""
+(0008,0020),DA,8,StudyDate	"20040304"
+(0008,0030),TM,0,StudyTime	""
+(0008,0050),SH,8,AccessionNumber	"1657271 "
+(0008,0052),CS,6,Query/RetrieveLevel	"STUDY "
+(0008,0056),CS,0,IAN_Status	""
+(0008,0061),CS,6,ModalitiesinStudy	"PT\CT "
+(0008,0080),LO,0,InstitutionName	""
+(0008,0090),PN,0,ReferringPhysicianName	""
+(0008,1030),LO,22,StudyDescription	"Neck^1HEAD_NECK_PETCT"
+(0008,1040),LO,0,InstitutionalDepartmentName	""
+(0008,1050),PN,0,PerformingPhysicianName	""
+(0008,1060),PN,0,NameofPhysician(s)ReadingStudy	""
+(0010,0010),PN,8,PatientName	"COMUNIX "
+(0010,0020),LO,8,PatientID	"fYET5.0 "
+(0010,0030),DA,0,Patient'sBirthDate	""
+(0010,0040),CS,2,Patient'sSex	"O "
+(0020,000d),UI,48,StudyInstanceUID	"1.2.840.113745.101000.1008000.38048.4626.5933732"
+(0020,0010),SH,8,StudyID	"3964225 "
+(0020,1208),IS,0,NumberofStudyRelatedImages	""
+
+[2018-01-31 09:16:43] - 
+127.0.0.1:106 ---> 192.168.1.100:59237 PDATATF - C_FIND_RSP
+Presentation Context ID: 1
+(0000,0002),UI,28,AffectedSOPClassUID	"1.2.840.10008.5.1.4.1.2.2.1"
+(0000,0100),US,2,CommandField	32800 
+(0000,0120),US,2,MessageIDBeingRespondedTo	0001 
+(0000,0800),US,2,DataSetType	0258 
+(0000,0900),US,2,Status	65280 
+
+[2018-01-31 09:16:43] - 
+127.0.0.1:106 ---> 192.168.1.100:59237 PDATATF - DataSet
+Presentation Context ID: 1
+(0008,0005),CS,0,SpecificCharacterSet	""
+(0008,0020),DA,8,StudyDate	"20090827"
+(0008,0030),TM,0,StudyTime	""
+(0008,0050),SH,0,AccessionNumber	""
+(0008,0052),CS,6,Query/RetrieveLevel	"STUDY "
+(0008,0056),CS,0,IAN_Status	""
+(0008,0061),CS,2,ModalitiesinStudy	"CT"
+(0008,0080),LO,0,InstitutionName	""
+(0008,0090),PN,0,ReferringPhysicianName	""
+(0008,1030),LO,22,StudyDescription	"Head^Sinus_2 (Adult)  "
+(0008,1040),LO,0,InstitutionalDepartmentName	""
+(0008,1050),PN,0,PerformingPhysicianName	""
+(0008,1060),PN,0,NameofPhysician(s)ReadingStudy	""
+(0010,0010),PN,6,PatientName	"ÐìÀöæÂ"
+(0010,0020),LO,8,PatientID	"09-8285 "
+(0010,0030),DA,0,Patient'sBirthDate	""
+(0010,0040),CS,2,Patient'sSex	"F "
+(0020,000d),UI,32,StudyInstanceUID	"1.3.1890.20090827.1171433.126123"
+(0020,0010),SH,14,StudyID	"RP090827171433"
+(0020,1208),IS,0,NumberofStudyRelatedImages	""
+
+[2018-01-31 09:16:43] - 
+127.0.0.1:106 ---> 192.168.1.100:59237 PDATATF - C_FIND_RSP
+Presentation Context ID: 1
+(0000,0002),UI,28,AffectedSOPClassUID	"1.2.840.10008.5.1.4.1.2.2.1"
+(0000,0100),US,2,CommandField	32800 
+(0000,0120),US,2,MessageIDBeingRespondedTo	0001 
+(0000,0800),US,2,DataSetType	0258 
+(0000,0900),US,2,Status	65280 
+
+[2018-01-31 09:16:43] - 
+127.0.0.1:106 ---> 192.168.1.100:59237 PDATATF - DataSet
+Presentation Context ID: 1
+(0008,0005),CS,0,SpecificCharacterSet	""
+(0008,0020),DA,8,StudyDate	"20100622"
+(0008,0030),TM,0,StudyTime	""
+(0008,0050),SH,14,AccessionNumber	"CT20100622-051"
+(0008,0052),CS,6,Query/RetrieveLevel	"STUDY "
+(0008,0056),CS,0,IAN_Status	""
+(0008,0061),CS,2,ModalitiesinStudy	"CT"
+(0008,0080),LO,0,InstitutionName	""
+(0008,0090),PN,0,ReferringPhysicianName	""
+(0008,1030),LO,30,StudyDescription	"Cardiac^5CCTA_BJTCM (Adult)   "
+(0008,1040),LO,0,InstitutionalDepartmentName	""
+(0008,1050),PN,0,PerformingPhysicianName	""
+(0008,1060),PN,0,NameofPhysician(s)ReadingStudy	""
+(0010,0010),PN,12,PatientName	"GU RUI MING "
+(0010,0020),LO,8,PatientID	"00612798"
+(0010,0030),DA,0,Patient'sBirthDate	""
+(0010,0040),CS,2,Patient'sSex	"F "
+(0020,000d),UI,44,StudyInstanceUID	"1.2.528.1.1008.2147483647.1277175608.8448.2"
+(0020,0010),SH,2,StudyID	"1 "
+(0020,1208),IS,0,NumberofStudyRelatedImages	""
+
+[2018-01-31 09:16:43] - 
+127.0.0.1:106 ---> 192.168.1.100:59237 PDATATF - C_FIND_RSP
+Presentation Context ID: 1
+(0000,0002),UI,28,AffectedSOPClassUID	"1.2.840.10008.5.1.4.1.2.2.1"
+(0000,0100),US,2,CommandField	32800 
+(0000,0120),US,2,MessageIDBeingRespondedTo	0001 
+(0000,0800),US,2,DataSetType	0258 
+(0000,0900),US,2,Status	65280 
+
+[2018-01-31 09:16:43] - 
+127.0.0.1:106 ---> 192.168.1.100:59237 PDATATF - DataSet
+Presentation Context ID: 1
+(0008,0005),CS,0,SpecificCharacterSet	""
+(0008,0020),DA,8,StudyDate	"20170512"
+(0008,0030),TM,0,StudyTime	""
+(0008,0050),SH,4,AccessionNumber	"3967"
+(0008,0052),CS,6,Query/RetrieveLevel	"STUDY "
+(0008,0056),CS,0,IAN_Status	""
+(0008,0061),CS,2,ModalitiesinStudy	"CT"
+(0008,0080),LO,0,InstitutionName	""
+(0008,0090),PN,0,ReferringPhysicianName	""
+(0008,1030),LO,14,StudyDescription	"RequestedDes  "
+(0008,1040),LO,0,InstitutionalDepartmentName	""
+(0008,1050),PN,0,PerformingPhysicianName	""
+(0008,1060),PN,0,NameofPhysician(s)ReadingStudy	""
+(0010,0010),PN,12,PatientName	"Lin ChangFa "
+(0010,0020),LO,4,PatientID	"3967"
+(0010,0030),DA,0,Patient'sBirthDate	""
+(0010,0040),CS,2,Patient'sSex	"M "
+(0020,000d),UI,30,StudyInstanceUID	"1.3.51.0.7.62322.20170512.3967"
+(0020,0010),SH,4,StudyID	"3967"
+(0020,1208),IS,0,NumberofStudyRelatedImages	""
+
+[2018-01-31 09:16:43] - 
+127.0.0.1:106 ---> 192.168.1.100:59237 PDATATF - C_FIND_RSP
+Presentation Context ID: 1
+(0000,0002),UI,28,AffectedSOPClassUID	"1.2.840.10008.5.1.4.1.2.2.1"
+(0000,0100),US,2,CommandField	32800 
+(0000,0120),US,2,MessageIDBeingRespondedTo	0001 
+(0000,0800),US,2,DataSetType	0258 
+(0000,0900),US,2,Status	65280 
+
+[2018-01-31 09:16:43] - 
+127.0.0.1:106 ---> 192.168.1.100:59237 PDATATF - DataSet
+Presentation Context ID: 1
+(0008,0005),CS,0,SpecificCharacterSet	""
+(0008,0020),DA,8,StudyDate	"20170316"
+(0008,0030),TM,0,StudyTime	""
+(0008,0050),SH,16,AccessionNumber	"031615255002299 "
+(0008,0052),CS,6,Query/RetrieveLevel	"STUDY "
+(0008,0056),CS,0,IAN_Status	""
+(0008,0061),CS,2,ModalitiesinStudy	"CT"
+(0008,0080),LO,0,InstitutionName	""
+(0008,0090),PN,0,ReferringPhysicianName	""
+(0008,1030),LO,6,StudyDescription	"YKCT  "
+(0008,1040),LO,0,InstitutionalDepartmentName	""
+(0008,1050),PN,0,PerformingPhysicianName	""
+(0008,1060),PN,0,NameofPhysician(s)ReadingStudy	""
+(0010,0010),PN,18,PatientName	"ÖÜÃ÷åû^zhou mingXX"
+(0010,0020),LO,8,PatientID	"A033375 "
+(0010,0030),DA,0,Patient'sBirthDate	""
+(0010,0040),CS,2,Patient'sSex	"F "
+(0020,000d),UI,52,StudyInstanceUID	"1.2.840.113820.5070.86.2056285424.201703161528089412"
+(0020,0010),SH,4,StudyID	"7c43"
+(0020,1208),IS,0,NumberofStudyRelatedImages	""
+
+[2018-01-31 09:16:43] - 
+127.0.0.1:106 ---> 192.168.1.100:59237 PDATATF - C_FIND_RSP
+Presentation Context ID: 1
+(0000,0002),UI,28,AffectedSOPClassUID	"1.2.840.10008.5.1.4.1.2.2.1"
+(0000,0100),US,2,CommandField	32800 
+(0000,0120),US,2,MessageIDBeingRespondedTo	0001 
+(0000,0800),US,2,DataSetType	0258 
+(0000,0900),US,2,Status	65280 
+
+[2018-01-31 09:16:43] - 
+127.0.0.1:106 ---> 192.168.1.100:59237 PDATATF - DataSet
+Presentation Context ID: 1
+(0008,0005),CS,0,SpecificCharacterSet	""
+(0008,0020),DA,8,StudyDate	"20130328"
+(0008,0030),TM,0,StudyTime	""
+(0008,0050),SH,6,AccessionNumber	"567641"
+(0008,0052),CS,6,Query/RetrieveLevel	"STUDY "
+(0008,0056),CS,0,IAN_Status	""
+(0008,0061),CS,2,ModalitiesinStudy	"CT"
+(0008,0080),LO,0,InstitutionName	""
+(0008,0090),PN,0,ReferringPhysicianName	""
+(0008,1030),LO,26,StudyDescription	"Spine^Spine_CTM (Adult)   "
+(0008,1040),LO,0,InstitutionalDepartmentName	""
+(0008,1050),PN,0,PerformingPhysicianName	""
+(0008,1060),PN,0,NameofPhysician(s)ReadingStudy	""
+(0010,0010),PN,8,PatientName	"XUE ZHI "
+(0010,0020),LO,8,PatientID	"00302663"
+(0010,0030),DA,0,Patient'sBirthDate	""
+(0010,0040),CS,2,Patient'sSex	"M "
+(0020,000d),UI,6,StudyInstanceUID	"567641"
+(0020,0010),SH,16,StudyID	"CT20130328140511"
+(0020,1208),IS,0,NumberofStudyRelatedImages	""
+
+[2018-01-31 09:16:43] - 
+127.0.0.1:106 ---> 192.168.1.100:59237 PDATATF - C_FIND_RSP
+Presentation Context ID: 1
+(0000,0002),UI,28,AffectedSOPClassUID	"1.2.840.10008.5.1.4.1.2.2.1"
+(0000,0100),US,2,CommandField	32800 
+(0000,0120),US,2,MessageIDBeingRespondedTo	0001 
+(0000,0800),US,2,DataSetType	0258 
+(0000,0900),US,2,Status	65280 
+
+[2018-01-31 09:16:43] - 
+127.0.0.1:106 ---> 192.168.1.100:59237 PDATATF - DataSet
+Presentation Context ID: 1
+(0008,0005),CS,0,SpecificCharacterSet	""
+(0008,0020),DA,8,StudyDate	"20170224"
+(0008,0030),TM,0,StudyTime	""
+(0008,0050),SH,14,AccessionNumber	"20170224103932"
+(0008,0052),CS,6,Query/RetrieveLevel	"STUDY "
+(0008,0056),CS,0,IAN_Status	""
+(0008,0061),CS,2,ModalitiesinStudy	"CT"
+(0008,0080),LO,0,InstitutionName	""
+(0008,0090),PN,0,ReferringPhysicianName	""
+(0008,1030),LO,0,StudyDescription	""
+(0008,1040),LO,0,InstitutionalDepartmentName	""
+(0008,1050),PN,0,PerformingPhysicianName	""
+(0008,1060),PN,0,NameofPhysician(s)ReadingStudy	""
+(0010,0010),PN,10,PatientName	"he^xian^e "
+(0010,0020),LO,4,PatientID	"1347"
+(0010,0030),DA,0,Patient'sBirthDate	""
+(0010,0040),CS,2,Patient'sSex	"F "
+(0020,000d),UI,58,StudyInstanceUID	"2.16.840.1.114492.2002237657024405402.176655752066.1770.36"
+(0020,0010),SH,6,StudyID	"001553"
+(0020,1208),IS,0,NumberofStudyRelatedImages	""
+
+[2018-01-31 09:16:43] - 
+127.0.0.1:106 ---> 192.168.1.100:59237 PDATATF - C_FIND_RSP
+Presentation Context ID: 1
+(0000,0002),UI,28,AffectedSOPClassUID	"1.2.840.10008.5.1.4.1.2.2.1"
+(0000,0100),US,2,CommandField	32800 
+(0000,0120),US,2,MessageIDBeingRespondedTo	0001 
+(0000,0800),US,2,DataSetType	0258 
+(0000,0900),US,2,Status	65280 
+
+[2018-01-31 09:16:43] - 
+127.0.0.1:106 ---> 192.168.1.100:59237 PDATATF - DataSet
+Presentation Context ID: 1
+(0008,0005),CS,0,SpecificCharacterSet	""
+(0008,0020),DA,8,StudyDate	"20170118"
+(0008,0030),TM,0,StudyTime	""
+(0008,0050),SH,14,AccessionNumber	"20170118101131"
+(0008,0052),CS,6,Query/RetrieveLevel	"STUDY "
+(0008,0056),CS,0,IAN_Status	""
+(0008,0061),CS,2,ModalitiesinStudy	"CT"
+(0008,0080),LO,0,InstitutionName	""
+(0008,0090),PN,0,ReferringPhysicianName	""
+(0008,1030),LO,0,StudyDescription	""
+(0008,1040),LO,0,InstitutionalDepartmentName	""
+(0008,1050),PN,0,PerformingPhysicianName	""
+(0008,1060),PN,0,NameofPhysician(s)ReadingStudy	""
+(0010,0010),PN,12,PatientName	"zhang^qiang "
+(0010,0020),LO,4,PatientID	"1012"
+(0010,0030),DA,0,Patient'sBirthDate	""
+(0010,0040),CS,2,Patient'sSex	"M "
+(0020,000d),UI,60,StudyInstanceUID	"2.16.840.1.114492.2002237657024405402.176627067315.10034.12"
+(0020,0010),SH,6,StudyID	"001110"
+(0020,1208),IS,0,NumberofStudyRelatedImages	""
+
+[2018-01-31 09:16:43] - 
+127.0.0.1:106 ---> 192.168.1.100:59237 PDATATF - C_FIND_RSP
+Presentation Context ID: 1
+(0000,0002),UI,28,AffectedSOPClassUID	"1.2.840.10008.5.1.4.1.2.2.1"
+(0000,0100),US,2,CommandField	32800 
+(0000,0120),US,2,MessageIDBeingRespondedTo	0001 
+(0000,0800),US,2,DataSetType	0258 
+(0000,0900),US,2,Status	65280 
+
+[2018-01-31 09:16:43] - 
+127.0.0.1:106 ---> 192.168.1.100:59237 PDATATF - DataSet
+Presentation Context ID: 1
+(0008,0005),CS,0,SpecificCharacterSet	""
+(0008,0020),DA,8,StudyDate	"20170119"
+(0008,0030),TM,0,StudyTime	""
+(0008,0050),SH,14,AccessionNumber	"20170119101205"
+(0008,0052),CS,6,Query/RetrieveLevel	"STUDY "
+(0008,0056),CS,0,IAN_Status	""
+(0008,0061),CS,2,ModalitiesinStudy	"CT"
+(0008,0080),LO,0,InstitutionName	""
+(0008,0090),PN,0,ReferringPhysicianName	""
+(0008,1030),LO,0,StudyDescription	""
+(0008,1040),LO,0,InstitutionalDepartmentName	""
+(0008,1050),PN,0,PerformingPhysicianName	""
+(0008,1060),PN,0,NameofPhysician(s)ReadingStudy	""
+(0010,0010),PN,10,PatientName	"a^bu^gu^li"
+(0010,0020),LO,4,PatientID	"1017"
+(0010,0030),DA,0,Patient'sBirthDate	""
+(0010,0040),CS,2,Patient'sSex	"F "
+(0020,000d),UI,58,StudyInstanceUID	"2.16.840.1.114492.2002237657024405402.176632636027.2440.32"
+(0020,0010),SH,6,StudyID	"001117"
+(0020,1208),IS,0,NumberofStudyRelatedImages	""
+
+[2018-01-31 09:16:43] - 
+127.0.0.1:106 ---> 192.168.1.100:59237 PDATATF - C_FIND_RSP
+Presentation Context ID: 1
+(0000,0002),UI,28,AffectedSOPClassUID	"1.2.840.10008.5.1.4.1.2.2.1"
+(0000,0100),US,2,CommandField	32800 
+(0000,0120),US,2,MessageIDBeingRespondedTo	0001 
+(0000,0800),US,2,DataSetType	0258 
+(0000,0900),US,2,Status	65280 
+
+[2018-01-31 09:16:43] - 
+127.0.0.1:106 ---> 192.168.1.100:59237 PDATATF - DataSet
+Presentation Context ID: 1
+(0008,0005),CS,0,SpecificCharacterSet	""
+(0008,0020),DA,8,StudyDate	"20090318"
+(0008,0030),TM,0,StudyTime	""
+(0008,0050),SH,0,AccessionNumber	""
+(0008,0052),CS,6,Query/RetrieveLevel	"STUDY "
+(0008,0056),CS,0,IAN_Status	""
+(0008,0061),CS,2,ModalitiesinStudy	"CT"
+(0008,0080),LO,0,InstitutionName	""
+(0008,0090),PN,0,ReferringPhysicianName	""
+(0008,1030),LO,24,StudyDescription	"ÑÝÊ¾Í¼Ïñ¡ªÃÚÄòÏµÔìÓ°
+
+  "
+(0008,1040),LO,0,InstitutionalDepartmentName	""
+(0008,1050),PN,0,PerformingPhysicianName	""
+(0008,1060),PN,0,NameofPhysician(s)ReadingStudy	""
+(0010,0010),PN,12,PatientName	"LI LI JUN  ^"
+(0010,0020),LO,10,PatientID	"1000910949"
+(0010,0030),DA,0,Patient'sBirthDate	""
+(0010,0040),CS,2,Patient'sSex	"M "
+(0020,000d),UI,44,StudyInstanceUID	"1.2.156.14702.1.1000.16.0.20120119210407843"
+(0020,0010),SH,0,StudyID	""
+(0020,1208),IS,0,NumberofStudyRelatedImages	""
+
+[2018-01-31 09:16:43] - 
+127.0.0.1:106 ---> 192.168.1.100:59237 PDATATF - C_FIND_RSP
+Presentation Context ID: 1
+(0000,0002),UI,28,AffectedSOPClassUID	"1.2.840.10008.5.1.4.1.2.2.1"
+(0000,0100),US,2,CommandField	32800 
+(0000,0120),US,2,MessageIDBeingRespondedTo	0001 
+(0000,0800),US,2,DataSetType	0258 
+(0000,0900),US,2,Status	65280 
+
+[2018-01-31 09:16:43] - 
+127.0.0.1:106 ---> 192.168.1.100:59237 PDATATF - DataSet
+Presentation Context ID: 1
+(0008,0005),CS,0,SpecificCharacterSet	""
+(0008,0020),DA,8,StudyDate	"20090414"
+(0008,0030),TM,0,StudyTime	""
+(0008,0050),SH,0,AccessionNumber	""
+(0008,0052),CS,6,Query/RetrieveLevel	"STUDY "
+(0008,0056),CS,0,IAN_Status	""
+(0008,0061),CS,2,ModalitiesinStudy	"CT"
+(0008,0080),LO,0,InstitutionName	""
+(0008,0090),PN,0,ReferringPhysicianName	""
+(0008,1030),LO,0,StudyDescription	""
+(0008,1040),LO,0,InstitutionalDepartmentName	""
+(0008,1050),PN,0,PerformingPhysicianName	""
+(0008,1060),PN,0,NameofPhysician(s)ReadingStudy	""
+(0010,0010),PN,14,PatientName	"zhang ling kun"
+(0010,0020),LO,6,PatientID	"19217 "
+(0010,0030),DA,0,Patient'sBirthDate	""
+(0010,0040),CS,2,Patient'sSex	"M "
+(0020,000d),UI,6,StudyInstanceUID	"19217"
+(0020,0010),SH,6,StudyID	"19217 "
+(0020,1208),IS,0,NumberofStudyRelatedImages	""
+
+[2018-01-31 09:16:43] - 
+127.0.0.1:106 ---> 192.168.1.100:59237 PDATATF - C_FIND_RSP
+Presentation Context ID: 1
+(0000,0002),UI,28,AffectedSOPClassUID	"1.2.840.10008.5.1.4.1.2.2.1"
+(0000,0100),US,2,CommandField	32800 
+(0000,0120),US,2,MessageIDBeingRespondedTo	0001 
+(0000,0800),US,2,DataSetType	0258 
+(0000,0900),US,2,Status	65280 
+
+[2018-01-31 09:16:43] - 
+127.0.0.1:106 ---> 192.168.1.100:59237 PDATATF - DataSet
+Presentation Context ID: 1
+(0008,0005),CS,0,SpecificCharacterSet	""
+(0008,0020),DA,8,StudyDate	"20050329"
+(0008,0030),TM,0,StudyTime	""
+(0008,0050),SH,8,AccessionNumber	"2386679 "
+(0008,0052),CS,6,Query/RetrieveLevel	"STUDY "
+(0008,0056),CS,0,IAN_Status	""
+(0008,0061),CS,2,ModalitiesinStudy	"CT"
+(0008,0080),LO,0,InstitutionName	""
+(0008,0090),PN,0,ReferringPhysicianName	""
+(0008,1030),LO,50,StudyDescription	"Cardiac^1CTA_CORONARY_ARTERIES_TESTBOLUS (Adult)  "
+(0008,1040),LO,0,InstitutionalDepartmentName	""
+(0008,1050),PN,0,PerformingPhysicianName	""
+(0008,1060),PN,0,NameofPhysician(s)ReadingStudy	""
+(0010,0010),PN,8,PatientName	"TOUTATIX"
+(0010,0020),LO,8,PatientID	"7DkT2Tp "
+(0010,0030),DA,0,Patient'sBirthDate	""
+(0010,0040),CS,2,Patient'sSex	"O "
+(0020,000d),UI,48,StudyInstanceUID	"1.2.840.113745.101000.1008000.38412.4675.7032121"
+(0020,0010),SH,8,StudyID	"4415342 "
+(0020,1208),IS,0,NumberofStudyRelatedImages	""
+
+[2018-01-31 09:16:43] - 
+127.0.0.1:106 ---> 192.168.1.100:59237 PDATATF - C_FIND_RSP
+Presentation Context ID: 1
+(0000,0002),UI,28,AffectedSOPClassUID	"1.2.840.10008.5.1.4.1.2.2.1"
+(0000,0100),US,2,CommandField	32800 
+(0000,0120),US,2,MessageIDBeingRespondedTo	0001 
+(0000,0800),US,2,DataSetType	0258 
+(0000,0900),US,2,Status	65280 
+
+[2018-01-31 09:16:43] - 
+127.0.0.1:106 ---> 192.168.1.100:59237 PDATATF - DataSet
+Presentation Context ID: 1
+(0008,0005),CS,0,SpecificCharacterSet	""
+(0008,0020),DA,8,StudyDate	"20061005"
+(0008,0030),TM,0,StudyTime	""
+(0008,0050),SH,2,AccessionNumber	"0 "
+(0008,0052),CS,6,Query/RetrieveLevel	"STUDY "
+(0008,0056),CS,0,IAN_Status	""
+(0008,0061),CS,6,ModalitiesinStudy	"SC\CT "
+(0008,0080),LO,0,InstitutionName	""
+(0008,0090),PN,0,ReferringPhysicianName	""
+(0008,1030),LO,14,StudyDescription	"CT1 abdomen   "
+(0008,1040),LO,0,InstitutionalDepartmentName	""
+(0008,1050),PN,0,PerformingPhysicianName	""
+(0008,1060),PN,0,NameofPhysician(s)ReadingStudy	""
+(0010,0010),PN,10,PatientName	"MACOESSIX "
+(0010,0020),LO,8,PatientID	"BrzEdv0 "
+(0010,0030),DA,0,Patient'sBirthDate	""
+(0010,0040),CS,2,Patient'sSex	"O "
+(0020,000d),UI,42,StudyInstanceUID	"2.16.840.1.113669.632.20.1211.10000307912"
+(0020,0010),SH,4,StudyID	"8006"
+(0020,1208),IS,0,NumberofStudyRelatedImages	""
+
+[2018-01-31 09:16:43] - 
+127.0.0.1:106 ---> 192.168.1.100:59237 PDATATF - C_FIND_RSP
+Presentation Context ID: 1
+(0000,0002),UI,28,AffectedSOPClassUID	"1.2.840.10008.5.1.4.1.2.2.1"
+(0000,0100),US,2,CommandField	32800 
+(0000,0120),US,2,MessageIDBeingRespondedTo	0001 
+(0000,0800),US,2,DataSetType	0258 
+(0000,0900),US,2,Status	65280 
+
+[2018-01-31 09:16:44] - 
+127.0.0.1:106 ---> 192.168.1.100:59237 PDATATF - DataSet
+Presentation Context ID: 1
+(0008,0005),CS,0,SpecificCharacterSet	""
+(0008,0020),DA,8,StudyDate	"20110428"
+(0008,0030),TM,0,StudyTime	""
+(0008,0050),SH,0,AccessionNumber	""
+(0008,0052),CS,6,Query/RetrieveLevel	"STUDY "
+(0008,0056),CS,0,IAN_Status	""
+(0008,0061),CS,2,ModalitiesinStudy	"CT"
+(0008,0080),LO,0,InstitutionName	""
+(0008,0090),PN,0,ReferringPhysicianName	""
+(0008,1030),LO,4,StudyDescription	"AB  "
+(0008,1040),LO,0,InstitutionalDepartmentName	""
+(0008,1050),PN,0,PerformingPhysicianName	""
+(0008,1060),PN,0,NameofPhysician(s)ReadingStudy	""
+(0010,0010),PN,12,PatientName	"LI CHUAN YOU"
+(0010,0020),LO,8,PatientID	"C932247 "
+(0010,0030),DA,0,Patient'sBirthDate	""
+(0010,0040),CS,2,Patient'sSex	"M "
+(0020,000d),UI,48,StudyInstanceUID	"1.2.840.113619.2.55.3.296487857.77.1303794642.56"
+(0020,0010),SH,6,StudyID	"14654 "
+(0020,1208),IS,0,NumberofStudyRelatedImages	""
+
+[2018-01-31 09:16:44] - 
+127.0.0.1:106 ---> 192.168.1.100:59237 PDATATF - C_FIND_RSP
+Presentation Context ID: 1
+(0000,0002),UI,28,AffectedSOPClassUID	"1.2.840.10008.5.1.4.1.2.2.1"
+(0000,0100),US,2,CommandField	32800 
+(0000,0120),US,2,MessageIDBeingRespondedTo	0001 
+(0000,0800),US,2,DataSetType	0258 
+(0000,0900),US,2,Status	65280 
+
+[2018-01-31 09:16:44] - 
+127.0.0.1:106 ---> 192.168.1.100:59237 PDATATF - DataSet
+Presentation Context ID: 1
+(0008,0005),CS,0,SpecificCharacterSet	""
+(0008,0020),DA,8,StudyDate	"20050927"
+(0008,0030),TM,0,StudyTime	""
+(0008,0050),SH,12,AccessionNumber	"A10011234814"
+(0008,0052),CS,6,Query/RetrieveLevel	"STUDY "
+(0008,0056),CS,0,IAN_Status	""
+(0008,0061),CS,2,ModalitiesinStudy	"CT"
+(0008,0080),LO,0,InstitutionName	""
+(0008,0090),PN,0,ReferringPhysicianName	""
+(0008,1030),LO,24,StudyDescription	"CT2 tête, face, sinus   "
+(0008,1040),LO,0,InstitutionalDepartmentName	""
+(0008,1050),PN,0,PerformingPhysicianName	""
+(0008,1060),PN,0,NameofPhysician(s)ReadingStudy	""
+(0010,0010),PN,6,PatientName	"PHENIX"
+(0010,0020),LO,8,PatientID	"Vafk,T,6"
+(0010,0030),DA,0,Patient'sBirthDate	""
+(0010,0040),CS,2,Patient'sSex	"O "
+(0020,000d),UI,42,StudyInstanceUID	"2.16.840.1.113669.632.20.1211.10000098591"
+(0020,0010),SH,4,StudyID	"1361"
+(0020,1208),IS,0,NumberofStudyRelatedImages	""
+
+[2018-01-31 09:16:44] - 
+127.0.0.1:106 ---> 192.168.1.100:59237 PDATATF - C_FIND_RSP
+Presentation Context ID: 1
+(0000,0002),UI,28,AffectedSOPClassUID	"1.2.840.10008.5.1.4.1.2.2.1"
+(0000,0100),US,2,CommandField	32800 
+(0000,0120),US,2,MessageIDBeingRespondedTo	0001 
+(0000,0800),US,2,DataSetType	0258 
+(0000,0900),US,2,Status	65280 
+
+[2018-01-31 09:16:44] - 
+127.0.0.1:106 ---> 192.168.1.100:59237 PDATATF - DataSet
+Presentation Context ID: 1
+(0008,0005),CS,0,SpecificCharacterSet	""
+(0008,0020),DA,8,StudyDate	"20140514"
+(0008,0030),TM,0,StudyTime	""
+(0008,0050),SH,0,AccessionNumber	""
+(0008,0052),CS,6,Query/RetrieveLevel	"STUDY "
+(0008,0056),CS,0,IAN_Status	""
+(0008,0061),CS,2,ModalitiesinStudy	"CT"
+(0008,0080),LO,0,InstitutionName	""
+(0008,0090),PN,0,ReferringPhysicianName	""
+(0008,1030),LO,0,StudyDescription	""
+(0008,1040),LO,0,InstitutionalDepartmentName	""
+(0008,1050),PN,0,PerformingPhysicianName	""
+(0008,1060),PN,0,NameofPhysician(s)ReadingStudy	""
+(0010,0010),PN,12,PatientName	"gao hong xia"
+(0010,0020),LO,6,PatientID	"01023 "
+(0010,0030),DA,0,Patient'sBirthDate	""
+(0010,0040),CS,2,Patient'sSex	"F "
+(0020,000d),UI,44,StudyInstanceUID	"1.2.156.14702.1.1001.16.0.20140514112126537"
+(0020,0010),SH,14,StudyID	"S-201405140562"
+(0020,1208),IS,0,NumberofStudyRelatedImages	""
+
+[2018-01-31 09:16:44] - 
+127.0.0.1:106 ---> 192.168.1.100:59237 PDATATF - C_FIND_RSP
+Presentation Context ID: 1
+(0000,0002),UI,28,AffectedSOPClassUID	"1.2.840.10008.5.1.4.1.2.2.1"
+(0000,0100),US,2,CommandField	32800 
+(0000,0120),US,2,MessageIDBeingRespondedTo	0001 
+(0000,0800),US,2,DataSetType	0258 
+(0000,0900),US,2,Status	65280 
+
+[2018-01-31 09:16:44] - 
+127.0.0.1:106 ---> 192.168.1.100:59237 PDATATF - DataSet
+Presentation Context ID: 1
+(0008,0005),CS,0,SpecificCharacterSet	""
+(0008,0020),DA,8,StudyDate	"20080701"
+(0008,0030),TM,0,StudyTime	""
+(0008,0050),SH,12,AccessionNumber	"A10003135868"
+(0008,0052),CS,6,Query/RetrieveLevel	"STUDY "
+(0008,0056),CS,0,IAN_Status	""
+(0008,0061),CS,2,ModalitiesinStudy	"CT"
+(0008,0080),LO,0,InstitutionName	""
+(0008,0090),PN,0,ReferringPhysicianName	""
+(0008,1030),LO,34,StudyDescription	"CAT SCAN ABDOMINAL COLONOSCOPIE   "
+(0008,1040),LO,0,InstitutionalDepartmentName	""
+(0008,1050),PN,0,PerformingPhysicianName	""
+(0008,1060),PN,0,NameofPhysician(s)ReadingStudy	""
+(0010,0010),PN,8,PatientName	"COLONIX "
+(0010,0020),LO,6,PatientID	"123123"
+(0010,0030),DA,0,Patient'sBirthDate	""
+(0010,0040),CS,2,Patient'sSex	"O "
+(0020,000d),UI,44,StudyInstanceUID	"2.16.840.1.113669.632.20.121711.10000155501"
+(0020,0010),SH,6,StudyID	"321321"
+(0020,1208),IS,0,NumberofStudyRelatedImages	""
+
+[2018-01-31 09:16:44] - 
+127.0.0.1:106 ---> 192.168.1.100:59237 PDATATF - C_FIND_RSP
+Presentation Context ID: 1
+(0000,0002),UI,28,AffectedSOPClassUID	"1.2.840.10008.5.1.4.1.2.2.1"
+(0000,0100),US,2,CommandField	32800 
+(0000,0120),US,2,MessageIDBeingRespondedTo	0001 
+(0000,0800),US,2,DataSetType	0258 
+(0000,0900),US,2,Status	65280 
+
+[2018-01-31 09:16:44] - 
+127.0.0.1:106 ---> 192.168.1.100:59237 PDATATF - DataSet
+Presentation Context ID: 1
+(0008,0005),CS,0,SpecificCharacterSet	""
+(0008,0020),DA,8,StudyDate	"20070917"
+(0008,0030),TM,0,StudyTime	""
+(0008,0050),SH,0,AccessionNumber	""
+(0008,0052),CS,6,Query/RetrieveLevel	"STUDY "
+(0008,0056),CS,0,IAN_Status	""
+(0008,0061),CS,2,ModalitiesinStudy	"CT"
+(0008,0080),LO,0,InstitutionName	""
+(0008,0090),PN,0,ReferringPhysicianName	""
+(0008,1030),LO,10,StudyDescription	"CH079093  "
+(0008,1040),LO,0,InstitutionalDepartmentName	""
+(0008,1050),PN,0,PerformingPhysicianName	""
+(0008,1060),PN,0,NameofPhysician(s)ReadingStudy	""
+(0010,0010),PN,6,PatientName	"Ëï¹ã½Ü"
+(0010,0020),LO,6,PatientID	"079093"
+(0010,0030),DA,0,Patient'sBirthDate	""
+(0010,0040),CS,2,Patient'sSex	"M "
+(0020,000d),UI,50,StudyInstanceUID	"1.2.840.113619.2.11.2013603896.8673.1189986891.739"
+(0020,0010),SH,6,StudyID	"33373 "
+(0020,1208),IS,0,NumberofStudyRelatedImages	""
+
+[2018-01-31 09:16:44] - 
+127.0.0.1:106 ---> 192.168.1.100:59237 PDATATF - C_FIND_RSP
+Presentation Context ID: 1
+(0000,0002),UI,28,AffectedSOPClassUID	"1.2.840.10008.5.1.4.1.2.2.1"
+(0000,0100),US,2,CommandField	32800 
+(0000,0120),US,2,MessageIDBeingRespondedTo	0001 
+(0000,0800),US,2,DataSetType	0258 
+(0000,0900),US,2,Status	65280 
+
+[2018-01-31 09:16:44] - 
+127.0.0.1:106 ---> 192.168.1.100:59237 PDATATF - DataSet
+Presentation Context ID: 1
+(0008,0005),CS,0,SpecificCharacterSet	""
+(0008,0020),DA,8,StudyDate	"20070414"
+(0008,0030),TM,0,StudyTime	""
+(0008,0050),SH,0,AccessionNumber	""
+(0008,0052),CS,6,Query/RetrieveLevel	"STUDY "
+(0008,0056),CS,0,IAN_Status	""
+(0008,0061),CS,2,ModalitiesinStudy	"CT"
+(0008,0080),LO,0,InstitutionName	""
+(0008,0090),PN,0,ReferringPhysicianName	""
+(0008,1030),LO,30,StudyDescription	"CB Works Secondary Captured   "
+(0008,1040),LO,0,InstitutionalDepartmentName	""
+(0008,1050),PN,0,PerformingPhysicianName	""
+(0008,1060),PN,0,NameofPhysician(s)ReadingStudy	""
+(0010,0010),PN,12,PatientName	"Smith^James "
+(0010,0020),LO,12,PatientID	"999-12-3456 "
+(0010,0030),DA,0,Patient'sBirthDate	""
+(0010,0040),CS,2,Patient'sSex	"M "
+(0020,000d),UI,42,StudyInstanceUID	"1.2.392.200036.9123.100.200.20040414140657"
+(0020,0010),SH,10,StudyID	"132234564 "
+(0020,1208),IS,0,NumberofStudyRelatedImages	""
+
+[2018-01-31 09:16:44] - 
+127.0.0.1:106 ---> 192.168.1.100:59237 PDATATF - C_FIND_RSP
+Presentation Context ID: 1
+(0000,0002),UI,28,AffectedSOPClassUID	"1.2.840.10008.5.1.4.1.2.2.1"
+(0000,0100),US,2,CommandField	32800 
+(0000,0120),US,2,MessageIDBeingRespondedTo	0001 
+(0000,0800),US,2,DataSetType	0258 
+(0000,0900),US,2,Status	65280 
+
+[2018-01-31 09:16:44] - 
+127.0.0.1:106 ---> 192.168.1.100:59237 PDATATF - DataSet
+Presentation Context ID: 1
+(0008,0005),CS,0,SpecificCharacterSet	""
+(0008,0020),DA,8,StudyDate	"20041130"
+(0008,0030),TM,0,StudyTime	""
+(0008,0050),SH,4,AccessionNumber	"0001"
+(0008,0052),CS,6,Query/RetrieveLevel	"STUDY "
+(0008,0056),CS,0,IAN_Status	""
+(0008,0061),CS,2,ModalitiesinStudy	"CT"
+(0008,0080),LO,0,InstitutionName	""
+(0008,0090),PN,0,ReferringPhysicianName	""
+(0008,1030),LO,0,StudyDescription	""
+(0008,1040),LO,0,InstitutionalDepartmentName	""
+(0008,1050),PN,0,PerformingPhysicianName	""
+(0008,1060),PN,0,NameofPhysician(s)ReadingStudy	""
+(0010,0010),PN,8,PatientName	"ID_0002 "
+(0010,0020),LO,14,PatientID	"********_**** "
+(0010,0030),DA,0,Patient'sBirthDate	""
+(0010,0040),CS,2,Patient'sSex	"M "
+(0020,000d),UI,56,StudyInstanceUID	"1.2.392.200103.20041025.114430.0.2005.6.29.15.22.39.1445"
+(0020,0010),SH,2,StudyID	"1 "
+(0020,1208),IS,0,NumberofStudyRelatedImages	""
+
+[2018-01-31 09:16:44] - 
+127.0.0.1:106 ---> 192.168.1.100:59237 PDATATF - C_FIND_RSP
+Presentation Context ID: 1
+(0000,0002),UI,28,AffectedSOPClassUID	"1.2.840.10008.5.1.4.1.2.2.1"
+(0000,0100),US,2,CommandField	32800 
+(0000,0120),US,2,MessageIDBeingRespondedTo	0001 
+(0000,0800),US,2,DataSetType	0258 
+(0000,0900),US,2,Status	65280 
+
+[2018-01-31 09:16:44] - 
+127.0.0.1:106 ---> 192.168.1.100:59237 PDATATF - DataSet
+Presentation Context ID: 1
+(0008,0005),CS,0,SpecificCharacterSet	""
+(0008,0020),DA,8,StudyDate	"20081113"
+(0008,0030),TM,0,StudyTime	""
+(0008,0050),SH,0,AccessionNumber	""
+(0008,0052),CS,6,Query/RetrieveLevel	"STUDY "
+(0008,0056),CS,0,IAN_Status	""
+(0008,0061),CS,2,ModalitiesinStudy	"CT"
+(0008,0080),LO,0,InstitutionName	""
+(0008,0090),PN,0,ReferringPhysicianName	""
+(0008,1030),LO,22,StudyDescription	"Head^Sinus1 (Adult)   "
+(0008,1040),LO,0,InstitutionalDepartmentName	""
+(0008,1050),PN,0,PerformingPhysicianName	""
+(0008,1060),PN,0,NameofPhysician(s)ReadingStudy	""
+(0010,0010),PN,12,PatientName	"YANG YAN RAN"
+(0010,0020),LO,8,PatientID	"02-11370"
+(0010,0030),DA,0,Patient'sBirthDate	""
+(0010,0040),CS,2,Patient'sSex	"F "
+(0020,000d),UI,36,StudyInstanceUID	"1.3.1890.20081113.1153846421.1584542"
+(0020,0010),SH,14,StudyID	"RP081113153846"
+(0020,1208),IS,0,NumberofStudyRelatedImages	""
+
+[2018-01-31 09:16:44] - 
+127.0.0.1:106 ---> 192.168.1.100:59237 PDATATF - C_FIND_RSP
+Presentation Context ID: 1
+(0000,0002),UI,28,AffectedSOPClassUID	"1.2.840.10008.5.1.4.1.2.2.1"
+(0000,0100),US,2,CommandField	32800 
+(0000,0120),US,2,MessageIDBeingRespondedTo	0001 
+(0000,0800),US,2,DataSetType	0258 
+(0000,0900),US,2,Status	65280 
+
+[2018-01-31 09:16:44] - 
+127.0.0.1:106 ---> 192.168.1.100:59237 PDATATF - DataSet
+Presentation Context ID: 1
+(0008,0005),CS,0,SpecificCharacterSet	""
+(0008,0020),DA,8,StudyDate	"20061026"
+(0008,0030),TM,0,StudyTime	""
+(0008,0050),SH,2,AccessionNumber	"0 "
+(0008,0052),CS,6,Query/RetrieveLevel	"STUDY "
+(0008,0056),CS,0,IAN_Status	""
+(0008,0061),CS,2,ModalitiesinStudy	"CT"
+(0008,0080),LO,0,InstitutionName	""
+(0008,0090),PN,0,ReferringPhysicianName	""
+(0008,1030),LO,20,StudyDescription	"CT10 ponction foie  "
+(0008,1040),LO,0,InstitutionalDepartmentName	""
+(0008,1050),PN,0,PerformingPhysicianName	""
+(0008,1060),PN,0,NameofPhysician(s)ReadingStudy	""
+(0010,0010),PN,6,PatientName	"BREBIX"
+(0010,0020),LO,6,PatientID	"XsaDYa"
+(0010,0030),DA,0,Patient'sBirthDate	""
+(0010,0040),CS,2,Patient'sSex	"O "
+(0020,000d),UI,42,StudyInstanceUID	"2.16.840.1.113669.632.20.1211.10000330985"
+(0020,0010),SH,4,StudyID	"8369"
+(0020,1208),IS,0,NumberofStudyRelatedImages	""
+
+[2018-01-31 09:16:44] - 
+127.0.0.1:106 ---> 192.168.1.100:59237 PDATATF - C_FIND_RSP
+Presentation Context ID: 1
+(0000,0002),UI,28,AffectedSOPClassUID	"1.2.840.10008.5.1.4.1.2.2.1"
+(0000,0100),US,2,CommandField	32800 
+(0000,0120),US,2,MessageIDBeingRespondedTo	0001 
+(0000,0800),US,2,DataSetType	0258 
+(0000,0900),US,2,Status	65280 
+
+[2018-01-31 09:16:44] - 
+127.0.0.1:106 ---> 192.168.1.100:59237 PDATATF - DataSet
+Presentation Context ID: 1
+(0008,0005),CS,0,SpecificCharacterSet	""
+(0008,0020),DA,8,StudyDate	"20140731"
+(0008,0030),TM,0,StudyTime	""
+(0008,0050),SH,0,AccessionNumber	""
+(0008,0052),CS,6,Query/RetrieveLevel	"STUDY "
+(0008,0056),CS,0,IAN_Status	""
+(0008,0061),CS,2,ModalitiesinStudy	"CT"
+(0008,0080),LO,0,InstitutionName	""
+(0008,0090),PN,0,ReferringPhysicianName	""
+(0008,1030),LO,6,StudyDescription	"CTA   "
+(0008,1040),LO,0,InstitutionalDepartmentName	""
+(0008,1050),PN,0,PerformingPhysicianName	""
+(0008,1060),PN,0,NameofPhysician(s)ReadingStudy	""
+(0010,0010),PN,10,PatientName	"XU XIU LAN"
+(0010,0020),LO,6,PatientID	"110637"
+(0010,0030),DA,0,Patient'sBirthDate	""
+(0010,0040),CS,2,Patient'sSex	"F "
+(0020,000d),UI,40,StudyInstanceUID	"1.2.840.113704.1.111.5932.1406769170.75"
+(0020,0010),SH,6,StudyID	"48284 "
+(0020,1208),IS,0,NumberofStudyRelatedImages	""
+
+[2018-01-31 09:16:44] - 
+127.0.0.1:106 ---> 192.168.1.100:59237 PDATATF - C_FIND_RSP
+Presentation Context ID: 1
+(0000,0002),UI,28,AffectedSOPClassUID	"1.2.840.10008.5.1.4.1.2.2.1"
+(0000,0100),US,2,CommandField	32800 
+(0000,0120),US,2,MessageIDBeingRespondedTo	0001 
+(0000,0800),US,2,DataSetType	0258 
+(0000,0900),US,2,Status	65280 
+
+[2018-01-31 09:16:44] - 
+127.0.0.1:106 ---> 192.168.1.100:59237 PDATATF - DataSet
+Presentation Context ID: 1
+(0008,0005),CS,0,SpecificCharacterSet	""
+(0008,0020),DA,8,StudyDate	"20151221"
+(0008,0030),TM,0,StudyTime	""
+(0008,0050),SH,0,AccessionNumber	""
+(0008,0052),CS,6,Query/RetrieveLevel	"STUDY "
+(0008,0056),CS,0,IAN_Status	""
+(0008,0061),CS,2,ModalitiesinStudy	"CT"
+(0008,0080),LO,0,InstitutionName	""
+(0008,0090),PN,0,ReferringPhysicianName	""
+(0008,1030),LO,24,StudyDescription	"Spine^01_Spine (Adult)  "
+(0008,1040),LO,0,InstitutionalDepartmentName	""
+(0008,1050),PN,0,PerformingPhysicianName	""
+(0008,1060),PN,0,NameofPhysician(s)ReadingStudy	""
+(0010,0010),PN,8,PatientName	"Àî×¿Âú´ë"
+(0010,0020),LO,8,PatientID	"15-8790 "
+(0010,0030),DA,0,Patient'sBirthDate	""
+(0010,0040),CS,2,Patient'sSex	"F "
+(0020,000d),UI,56,StudyInstanceUID	"1.3.12.2.1107.5.1.4.86040.30000015122100335317100000013"
+(0020,0010),SH,2,StudyID	"2 "
+(0020,1208),IS,0,NumberofStudyRelatedImages	""
+
+[2018-01-31 09:16:44] - 
+127.0.0.1:106 ---> 192.168.1.100:59237 PDATATF - C_FIND_RSP
+Presentation Context ID: 1
+(0000,0002),UI,28,AffectedSOPClassUID	"1.2.840.10008.5.1.4.1.2.2.1"
+(0000,0100),US,2,CommandField	32800 
+(0000,0120),US,2,MessageIDBeingRespondedTo	0001 
+(0000,0800),US,2,DataSetType	0258 
+(0000,0900),US,2,Status	65280 
+
+[2018-01-31 09:16:44] - 
+127.0.0.1:106 ---> 192.168.1.100:59237 PDATATF - DataSet
+Presentation Context ID: 1
+(0008,0005),CS,0,SpecificCharacterSet	""
+(0008,0020),DA,8,StudyDate	"20151110"
+(0008,0030),TM,0,StudyTime	""
+(0008,0050),SH,0,AccessionNumber	""
+(0008,0052),CS,6,Query/RetrieveLevel	"STUDY "
+(0008,0056),CS,0,IAN_Status	""
+(0008,0061),CS,30,ModalitiesinStudy	"RTIMAGE\RTSTRUCT\RTPLAN\RTDOSE"
+(0008,0080),LO,0,InstitutionName	""
+(0008,0090),PN,0,ReferringPhysicianName	""
+(0008,1030),LO,0,StudyDescription	""
+(0008,1040),LO,0,InstitutionalDepartmentName	""
+(0008,1050),PN,0,PerformingPhysicianName	""
+(0008,1060),PN,0,NameofPhysician(s)ReadingStudy	""
+(0010,0010),PN,12,PatientName	"WANG SHE YE "
+(0010,0020),LO,10,PatientID	"P20150757 "
+(0010,0030),DA,0,Patient'sBirthDate	""
+(0010,0040),CS,2,Patient'sSex	"F "
+(0020,000d),UI,52,StudyInstanceUID	"2.16.840.1.114337.132683354945531.11797.1447340305.0"
+(0020,0010),SH,2,StudyID	"CT"
+(0020,1208),IS,0,NumberofStudyRelatedImages	""
+
+[2018-01-31 09:16:44] - 
+127.0.0.1:106 ---> 192.168.1.100:59237 PDATATF - C_FIND_RSP
+Presentation Context ID: 1
+(0000,0002),UI,28,AffectedSOPClassUID	"1.2.840.10008.5.1.4.1.2.2.1"
+(0000,0100),US,2,CommandField	32800 
+(0000,0120),US,2,MessageIDBeingRespondedTo	0001 
+(0000,0800),US,2,DataSetType	0258 
+(0000,0900),US,2,Status	65280 
+
+[2018-01-31 09:16:44] - 
+127.0.0.1:106 ---> 192.168.1.100:59237 PDATATF - DataSet
+Presentation Context ID: 1
+(0008,0005),CS,0,SpecificCharacterSet	""
+(0008,0020),DA,8,StudyDate	"20150907"
+(0008,0030),TM,0,StudyTime	""
+(0008,0050),SH,8,AccessionNumber	"01279922"
+(0008,0052),CS,6,Query/RetrieveLevel	"STUDY "
+(0008,0056),CS,0,IAN_Status	""
+(0008,0061),CS,22,ModalitiesinStudy	"RTSTRUCT\RTPLAN\RTDOSE"
+(0008,0080),LO,0,InstitutionName	""
+(0008,0090),PN,0,ReferringPhysicianName	""
+(0008,1030),LO,8,StudyDescription	"CHEST   "
+(0008,1040),LO,0,InstitutionalDepartmentName	""
+(0008,1050),PN,0,PerformingPhysicianName	""
+(0008,1060),PN,0,NameofPhysician(s)ReadingStudy	""
+(0010,0010),PN,10,PatientName	"XuPengBin "
+(0010,0020),LO,10,PatientID	"2015090701"
+(0010,0030),DA,0,Patient'sBirthDate	""
+(0010,0040),CS,2,Patient'sSex	"M "
+(0020,000d),UI,38,StudyInstanceUID	"1.2.840.113704.1.111.7796.1441613300.1"
+(0020,0010),SH,6,StudyID	"70224 "
+(0020,1208),IS,0,NumberofStudyRelatedImages	""
+
+[2018-01-31 09:16:44] - 
+127.0.0.1:106 ---> 192.168.1.100:59237 PDATATF - C_FIND_RSP
+Presentation Context ID: 1
+(0000,0002),UI,28,AffectedSOPClassUID	"1.2.840.10008.5.1.4.1.2.2.1"
+(0000,0100),US,2,CommandField	32800 
+(0000,0120),US,2,MessageIDBeingRespondedTo	0001 
+(0000,0800),US,2,DataSetType	0258 
+(0000,0900),US,2,Status	65280 
+
+[2018-01-31 09:16:44] - 
+127.0.0.1:106 ---> 192.168.1.100:59237 PDATATF - DataSet
+Presentation Context ID: 1
+(0008,0005),CS,0,SpecificCharacterSet	""
+(0008,0020),DA,8,StudyDate	"20131224"
+(0008,0030),TM,0,StudyTime	""
+(0008,0050),SH,0,AccessionNumber	""
+(0008,0052),CS,6,Query/RetrieveLevel	"STUDY "
+(0008,0056),CS,0,IAN_Status	""
+(0008,0061),CS,6,ModalitiesinStudy	"CT\PT "
+(0008,0080),LO,0,InstitutionName	""
+(0008,0090),PN,0,ReferringPhysicianName	""
+(0008,1030),LO,30,StudyDescription	"PET^3DELAY_WholeBody (Adult)  "
+(0008,1040),LO,0,InstitutionalDepartmentName	""
+(0008,1050),PN,0,PerformingPhysicianName	""
+(0008,1060),PN,0,NameofPhysician(s)ReadingStudy	""
+(0010,0010),PN,4,PatientName	"ÄäÃû"
+(0010,0020),LO,10,PatientID	"P0003149-5"
+(0010,0030),DA,0,Patient'sBirthDate	""
+(0010,0040),CS,2,Patient'sSex	"M "
+(0020,000d),UI,54,StudyInstanceUID	"1.3.12.2.1107.5.1.4.1390.30010013122323555687500000046"
+(0020,0010),SH,2,StudyID	"3 "
+(0020,1208),IS,0,NumberofStudyRelatedImages	""
+
+[2018-01-31 09:16:44] - 
+127.0.0.1:106 ---> 192.168.1.100:59237 PDATATF - C_FIND_RSP
+Presentation Context ID: 1
+(0000,0002),UI,28,AffectedSOPClassUID	"1.2.840.10008.5.1.4.1.2.2.1"
+(0000,0100),US,2,CommandField	32800 
+(0000,0120),US,2,MessageIDBeingRespondedTo	0001 
+(0000,0800),US,2,DataSetType	0258 
+(0000,0900),US,2,Status	65280 
+
+[2018-01-31 09:16:44] - 
+127.0.0.1:106 ---> 192.168.1.100:59237 PDATATF - DataSet
+Presentation Context ID: 1
+(0008,0005),CS,0,SpecificCharacterSet	""
+(0008,0020),DA,8,StudyDate	"20100510"
+(0008,0030),TM,0,StudyTime	""
+(0008,0050),SH,8,AccessionNumber	"00000001"
+(0008,0052),CS,6,Query/RetrieveLevel	"STUDY "
+(0008,0056),CS,0,IAN_Status	""
+(0008,0061),CS,6,ModalitiesinStudy	"CT\PT "
+(0008,0080),LO,0,InstitutionName	""
+(0008,0090),PN,0,ReferringPhysicianName	""
+(0008,1030),LO,20,StudyDescription	"Neck^HeadNeckPETCT  "
+(0008,1040),LO,0,InstitutionalDepartmentName	""
+(0008,1050),PN,0,PerformingPhysicianName	""
+(0008,1060),PN,0,NameofPhysician(s)ReadingStudy	""
+(0010,0010),PN,18,PatientName	"Patient^Anonymous "
+(0010,0020),LO,8,PatientID	"12345678"
+(0010,0030),DA,0,Patient'sBirthDate	""
+(0010,0040),CS,2,Patient'sSex	"M "
+(0020,000d),UI,52,StudyInstanceUID	"1.3.6.1.4.1.25403.52237031786.3872.20100510032220.1"
+(0020,0010),SH,0,StudyID	""
+(0020,1208),IS,0,NumberofStudyRelatedImages	""
+
+[2018-01-31 09:16:44] - 
+127.0.0.1:106 ---> 192.168.1.100:59237 PDATATF - C_FIND_RSP
+Presentation Context ID: 1
+(0000,0002),UI,28,AffectedSOPClassUID	"1.2.840.10008.5.1.4.1.2.2.1"
+(0000,0100),US,2,CommandField	32800 
+(0000,0120),US,2,MessageIDBeingRespondedTo	0001 
+(0000,0800),US,2,DataSetType	0258 
+(0000,0900),US,2,Status	65280 
+
+[2018-01-31 09:16:44] - 
+127.0.0.1:106 ---> 192.168.1.100:59237 PDATATF - DataSet
+Presentation Context ID: 1
+(0008,0005),CS,0,SpecificCharacterSet	""
+(0008,0020),DA,8,StudyDate	"20090215"
+(0008,0030),TM,0,StudyTime	""
+(0008,0050),SH,0,AccessionNumber	""
+(0008,0052),CS,6,Query/RetrieveLevel	"STUDY "
+(0008,0056),CS,0,IAN_Status	""
+(0008,0061),CS,2,ModalitiesinStudy	"CT"
+(0008,0080),LO,0,InstitutionName	""
+(0008,0090),PN,0,ReferringPhysicianName	""
+(0008,1030),LO,0,StudyDescription	""
+(0008,1040),LO,0,InstitutionalDepartmentName	""
+(0008,1050),PN,0,PerformingPhysicianName	""
+(0008,1060),PN,0,NameofPhysician(s)ReadingStudy	""
+(0010,0010),PN,10,PatientName	"AB+CAR_01 "
+(0010,0020),LO,10,PatientID	"AB+CAR_01 "
+(0010,0030),DA,0,Patient'sBirthDate	""
+(0010,0040),CS,2,Patient'sSex	"M "
+(0020,000d),UI,54,StudyInstanceUID	"2.16.124.113543.6003.4110288739.45682.19687.2411604394"
+(0020,0010),SH,0,StudyID	""
+(0020,1208),IS,0,NumberofStudyRelatedImages	""
+
+[2018-01-31 09:16:44] - 
+127.0.0.1:106 ---> 192.168.1.100:59237 PDATATF - C_FIND_RSP
+Presentation Context ID: 1
+(0000,0002),UI,28,AffectedSOPClassUID	"1.2.840.10008.5.1.4.1.2.2.1"
+(0000,0100),US,2,CommandField	32800 
+(0000,0120),US,2,MessageIDBeingRespondedTo	0001 
+(0000,0800),US,2,DataSetType	0257 
+(0000,0900),US,2,Status	0000 
+
+[2018-01-31 09:16:44] - 
+192.168.1.100:59237 ---> 127.0.0.1:106 AR_RQ
+Length: 4 Reserved2: 0x0
+
+[2018-01-31 09:16:44] - 
+127.0.0.1:106 ---> 192.168.1.100:59237 AR_RP
+Length: 4 Reserved2: 0x0
+
+[2018-01-31 09:17:07] - 
+192.168.1.100:59240 ---> 127.0.0.1:106 AA_RQ
+Calling AET: RADIANT         
+Called  AET: WPACS           
+ApplicationContextName: 1.2.840.10008.3.1.1.1
+Presentation Context ID: 1
+AbstractSyntaxName: 1.2.840.10008.5.1.4.1.2.2.2
+TransferSyntaxName: 1.2.840.10008.1.2.1
+TransferSyntaxName: 1.2.840.10008.1.2
+TransferSyntaxName: 1.2.840.10008.1.2.2
+TransferSyntaxName: 1.2.840.10008.1.2.4.70
+TransferSyntaxName: 1.2.840.10008.1.2.4.80
+TransferSyntaxName: 1.2.840.10008.1.2.4.90
+TransferSyntaxName: 1.2.840.10008.1.2.4.50
+TransferSyntaxName: 1.2.840.10008.1.2.4.51
+TransferSyntaxName: 1.2.840.10008.1.2.4.81
+TransferSyntaxName: 1.2.840.10008.1.2.4.91
+TransferSyntaxName: 1.2.840.10008.1.2.5
+TransferSyntaxName: 1.2.840.10008.1.2.4.100
+TransferSyntaxName: 1.2.840.10008.1.2.4.101
+TransferSyntaxName: 1.2.840.10008.1.2.4.102
+TransferSyntaxName: 1.2.840.10008.1.2.4.103
+Max Sub Length: 16384
+Implementation Class: 1.2.826.0.1.3680043.8.1223.1.2
+Implementation Version: RadiAnt-4.2.1
+
+[2018-01-31 09:17:07] - 
+127.0.0.1:106 ---> 192.168.1.100:59240 AA_AC
+Calling AET: RADIANT         
+Called  AET: WPACS           
+ApplicationContextName: 1.2.840.10008.3.1.1.1
+Presentation Context ID: 1
+PresContextAccept Result: Accept
+TransferSyntaxName: 1.2.840.10008.1.2.1
+Max Sub Length: 16384
+Implementation Class: 1.2.40.1.12.8008
+Implementation Version: WPACS0301
+
+[2018-01-31 09:17:07] - 
+192.168.1.100:59240 ---> 127.0.0.1:106 PDATATF - C_MOVE_RQ
+Presentation Context ID: 1
+(0000,0002),UI,28,AffectedSOPClassUID	"1.2.840.10008.5.1.4.1.2.2.2"
+(0000,0100),US,2,CommandField	0033 
+(0000,0110),US,2,MessageID	0001 
+(0000,0600),AE,8,MoveDestination	"RADIANT"
+(0000,0700),US,2,Priority	0000 
+(0000,0800),US,2,DataSetType	0258 
+
+[2018-01-31 09:17:07] - 
+192.168.1.100:59240 ---> 127.0.0.1:106 PDATATF - DataSet
+Presentation Context ID: 1
+(0008,0052),CS,6,Query/RetrieveLevel	"STUDY"
+(0020,000d),UI,50,StudyInstanceUID	"1.2.840.113619.2.11.2013603896.8673.1189986891.739"
+
+[2018-01-31 09:17:07] - 
+127.0.0.1:106 ---> 192.168.1.100:59240 PDATATF - C_MOVE_RSP
+Presentation Context ID: 1
+(0000,0002),UI,28,AffectedSOPClassUID	"1.2.840.10008.5.1.4.1.2.2.2"
+(0000,0100),US,2,CommandField	32801 
+(0000,0120),US,2,MessageIDBeingRespondedTo	0001 
+(0000,0800),US,2,DataSetType	0257 
+(0000,0900),US,2,Status	65280 
+(0000,1020),US,2,NumberofRemainingSub-operations	0027 
+(0000,1021),US,2,NumberofCompletedSub-operations	0000 
+(0000,1022),US,2,NumberofFailedSub-operations	0000 
+(0000,1023),US,2,NumberofWarningSub-operations	0000 
+
+[2018-01-31 09:17:07] - 
+127.0.0.1:106 ---> 192.168.1.100:59240 PDATATF - C_MOVE_RSP
+Presentation Context ID: 1
+(0000,0002),UI,28,AffectedSOPClassUID	"1.2.840.10008.5.1.4.1.2.2.2"
+(0000,0100),US,2,CommandField	32801 
+(0000,0120),US,2,MessageIDBeingRespondedTo	0001 
+(0000,0800),US,2,DataSetType	0257 
+(0000,0900),US,2,Status	65280 
+(0000,1020),US,2,NumberofRemainingSub-operations	0026 
+(0000,1021),US,2,NumberofCompletedSub-operations	0001 
+(0000,1022),US,2,NumberofFailedSub-operations	0000 
+(0000,1023),US,2,NumberofWarningSub-operations	0000 
+
+[2018-01-31 09:17:07] - 
+127.0.0.1:106 ---> 192.168.1.100:59240 PDATATF - C_MOVE_RSP
+Presentation Context ID: 1
+(0000,0002),UI,28,AffectedSOPClassUID	"1.2.840.10008.5.1.4.1.2.2.2"
+(0000,0100),US,2,CommandField	32801 
+(0000,0120),US,2,MessageIDBeingRespondedTo	0001 
+(0000,0800),US,2,DataSetType	0257 
+(0000,0900),US,2,Status	65280 
+(0000,1020),US,2,NumberofRemainingSub-operations	0025 
+(0000,1021),US,2,NumberofCompletedSub-operations	0002 
+(0000,1022),US,2,NumberofFailedSub-operations	0000 
+(0000,1023),US,2,NumberofWarningSub-operations	0000 
+
+[2018-01-31 09:17:07] - 
+127.0.0.1:106 ---> 192.168.1.100:59240 PDATATF - C_MOVE_RSP
+Presentation Context ID: 1
+(0000,0002),UI,28,AffectedSOPClassUID	"1.2.840.10008.5.1.4.1.2.2.2"
+(0000,0100),US,2,CommandField	32801 
+(0000,0120),US,2,MessageIDBeingRespondedTo	0001 
+(0000,0800),US,2,DataSetType	0257 
+(0000,0900),US,2,Status	65280 
+(0000,1020),US,2,NumberofRemainingSub-operations	0024 
+(0000,1021),US,2,NumberofCompletedSub-operations	0003 
+(0000,1022),US,2,NumberofFailedSub-operations	0000 
+(0000,1023),US,2,NumberofWarningSub-operations	0000 
+
+[2018-01-31 09:17:07] - 
+127.0.0.1:106 ---> 192.168.1.100:59240 PDATATF - C_MOVE_RSP
+Presentation Context ID: 1
+(0000,0002),UI,28,AffectedSOPClassUID	"1.2.840.10008.5.1.4.1.2.2.2"
+(0000,0100),US,2,CommandField	32801 
+(0000,0120),US,2,MessageIDBeingRespondedTo	0001 
+(0000,0800),US,2,DataSetType	0257 
+(0000,0900),US,2,Status	65280 
+(0000,1020),US,2,NumberofRemainingSub-operations	0023 
+(0000,1021),US,2,NumberofCompletedSub-operations	0004 
+(0000,1022),US,2,NumberofFailedSub-operations	0000 
+(0000,1023),US,2,NumberofWarningSub-operations	0000 
+
+[2018-01-31 09:17:07] - 
+127.0.0.1:106 ---> 192.168.1.100:59240 PDATATF - C_MOVE_RSP
+Presentation Context ID: 1
+(0000,0002),UI,28,AffectedSOPClassUID	"1.2.840.10008.5.1.4.1.2.2.2"
+(0000,0100),US,2,CommandField	32801 
+(0000,0120),US,2,MessageIDBeingRespondedTo	0001 
+(0000,0800),US,2,DataSetType	0257 
+(0000,0900),US,2,Status	65280 
+(0000,1020),US,2,NumberofRemainingSub-operations	0022 
+(0000,1021),US,2,NumberofCompletedSub-operations	0005 
+(0000,1022),US,2,NumberofFailedSub-operations	0000 
+(0000,1023),US,2,NumberofWarningSub-operations	0000 
+
+[2018-01-31 09:17:07] - 
+127.0.0.1:106 ---> 192.168.1.100:59240 PDATATF - C_MOVE_RSP
+Presentation Context ID: 1
+(0000,0002),UI,28,AffectedSOPClassUID	"1.2.840.10008.5.1.4.1.2.2.2"
+(0000,0100),US,2,CommandField	32801 
+(0000,0120),US,2,MessageIDBeingRespondedTo	0001 
+(0000,0800),US,2,DataSetType	0257 
+(0000,0900),US,2,Status	65280 
+(0000,1020),US,2,NumberofRemainingSub-operations	0021 
+(0000,1021),US,2,NumberofCompletedSub-operations	0006 
+(0000,1022),US,2,NumberofFailedSub-operations	0000 
+(0000,1023),US,2,NumberofWarningSub-operations	0000 
+
+[2018-01-31 09:17:07] - 
+127.0.0.1:106 ---> 192.168.1.100:59240 PDATATF - C_MOVE_RSP
+Presentation Context ID: 1
+(0000,0002),UI,28,AffectedSOPClassUID	"1.2.840.10008.5.1.4.1.2.2.2"
+(0000,0100),US,2,CommandField	32801 
+(0000,0120),US,2,MessageIDBeingRespondedTo	0001 
+(0000,0800),US,2,DataSetType	0257 
+(0000,0900),US,2,Status	65280 
+(0000,1020),US,2,NumberofRemainingSub-operations	0020 
+(0000,1021),US,2,NumberofCompletedSub-operations	0007 
+(0000,1022),US,2,NumberofFailedSub-operations	0000 
+(0000,1023),US,2,NumberofWarningSub-operations	0000 
+
+[2018-01-31 09:17:07] - 
+127.0.0.1:106 ---> 192.168.1.100:59240 PDATATF - C_MOVE_RSP
+Presentation Context ID: 1
+(0000,0002),UI,28,AffectedSOPClassUID	"1.2.840.10008.5.1.4.1.2.2.2"
+(0000,0100),US,2,CommandField	32801 
+(0000,0120),US,2,MessageIDBeingRespondedTo	0001 
+(0000,0800),US,2,DataSetType	0257 
+(0000,0900),US,2,Status	65280 
+(0000,1020),US,2,NumberofRemainingSub-operations	0019 
+(0000,1021),US,2,NumberofCompletedSub-operations	0008 
+(0000,1022),US,2,NumberofFailedSub-operations	0000 
+(0000,1023),US,2,NumberofWarningSub-operations	0000 
+
+[2018-01-31 09:17:07] - 
+127.0.0.1:106 ---> 192.168.1.100:59240 PDATATF - C_MOVE_RSP
+Presentation Context ID: 1
+(0000,0002),UI,28,AffectedSOPClassUID	"1.2.840.10008.5.1.4.1.2.2.2"
+(0000,0100),US,2,CommandField	32801 
+(0000,0120),US,2,MessageIDBeingRespondedTo	0001 
+(0000,0800),US,2,DataSetType	0257 
+(0000,0900),US,2,Status	65280 
+(0000,1020),US,2,NumberofRemainingSub-operations	0018 
+(0000,1021),US,2,NumberofCompletedSub-operations	0009 
+(0000,1022),US,2,NumberofFailedSub-operations	0000 
+(0000,1023),US,2,NumberofWarningSub-operations	0000 
+
+[2018-01-31 09:17:07] - 
+127.0.0.1:106 ---> 192.168.1.100:59240 PDATATF - C_MOVE_RSP
+Presentation Context ID: 1
+(0000,0002),UI,28,AffectedSOPClassUID	"1.2.840.10008.5.1.4.1.2.2.2"
+(0000,0100),US,2,CommandField	32801 
+(0000,0120),US,2,MessageIDBeingRespondedTo	0001 
+(0000,0800),US,2,DataSetType	0257 
+(0000,0900),US,2,Status	65280 
+(0000,1020),US,2,NumberofRemainingSub-operations	0017 
+(0000,1021),US,2,NumberofCompletedSub-operations	0010 
+(0000,1022),US,2,NumberofFailedSub-operations	0000 
+(0000,1023),US,2,NumberofWarningSub-operations	0000 
+
+[2018-01-31 09:17:07] - 
+127.0.0.1:106 ---> 192.168.1.100:59240 PDATATF - C_MOVE_RSP
+Presentation Context ID: 1
+(0000,0002),UI,28,AffectedSOPClassUID	"1.2.840.10008.5.1.4.1.2.2.2"
+(0000,0100),US,2,CommandField	32801 
+(0000,0120),US,2,MessageIDBeingRespondedTo	0001 
+(0000,0800),US,2,DataSetType	0257 
+(0000,0900),US,2,Status	65280 
+(0000,1020),US,2,NumberofRemainingSub-operations	0016 
+(0000,1021),US,2,NumberofCompletedSub-operations	0011 
+(0000,1022),US,2,NumberofFailedSub-operations	0000 
+(0000,1023),US,2,NumberofWarningSub-operations	0000 
+
+[2018-01-31 09:17:07] - 
+127.0.0.1:106 ---> 192.168.1.100:59240 PDATATF - C_MOVE_RSP
+Presentation Context ID: 1
+(0000,0002),UI,28,AffectedSOPClassUID	"1.2.840.10008.5.1.4.1.2.2.2"
+(0000,0100),US,2,CommandField	32801 
+(0000,0120),US,2,MessageIDBeingRespondedTo	0001 
+(0000,0800),US,2,DataSetType	0257 
+(0000,0900),US,2,Status	65280 
+(0000,1020),US,2,NumberofRemainingSub-operations	0015 
+(0000,1021),US,2,NumberofCompletedSub-operations	0012 
+(0000,1022),US,2,NumberofFailedSub-operations	0000 
+(0000,1023),US,2,NumberofWarningSub-operations	0000 
+
+[2018-01-31 09:17:07] - 
+127.0.0.1:106 ---> 192.168.1.100:59240 PDATATF - C_MOVE_RSP
+Presentation Context ID: 1
+(0000,0002),UI,28,AffectedSOPClassUID	"1.2.840.10008.5.1.4.1.2.2.2"
+(0000,0100),US,2,CommandField	32801 
+(0000,0120),US,2,MessageIDBeingRespondedTo	0001 
+(0000,0800),US,2,DataSetType	0257 
+(0000,0900),US,2,Status	65280 
+(0000,1020),US,2,NumberofRemainingSub-operations	0014 
+(0000,1021),US,2,NumberofCompletedSub-operations	0013 
+(0000,1022),US,2,NumberofFailedSub-operations	0000 
+(0000,1023),US,2,NumberofWarningSub-operations	0000 
+
+[2018-01-31 09:17:07] - 
+127.0.0.1:106 ---> 192.168.1.100:59240 PDATATF - C_MOVE_RSP
+Presentation Context ID: 1
+(0000,0002),UI,28,AffectedSOPClassUID	"1.2.840.10008.5.1.4.1.2.2.2"
+(0000,0100),US,2,CommandField	32801 
+(0000,0120),US,2,MessageIDBeingRespondedTo	0001 
+(0000,0800),US,2,DataSetType	0257 
+(0000,0900),US,2,Status	65280 
+(0000,1020),US,2,NumberofRemainingSub-operations	0013 
+(0000,1021),US,2,NumberofCompletedSub-operations	0014 
+(0000,1022),US,2,NumberofFailedSub-operations	0000 
+(0000,1023),US,2,NumberofWarningSub-operations	0000 
+
+[2018-01-31 09:17:07] - 
+127.0.0.1:106 ---> 192.168.1.100:59240 PDATATF - C_MOVE_RSP
+Presentation Context ID: 1
+(0000,0002),UI,28,AffectedSOPClassUID	"1.2.840.10008.5.1.4.1.2.2.2"
+(0000,0100),US,2,CommandField	32801 
+(0000,0120),US,2,MessageIDBeingRespondedTo	0001 
+(0000,0800),US,2,DataSetType	0257 
+(0000,0900),US,2,Status	65280 
+(0000,1020),US,2,NumberofRemainingSub-operations	0012 
+(0000,1021),US,2,NumberofCompletedSub-operations	0015 
+(0000,1022),US,2,NumberofFailedSub-operations	0000 
+(0000,1023),US,2,NumberofWarningSub-operations	0000 
+
+[2018-01-31 09:17:07] - 
+127.0.0.1:106 ---> 192.168.1.100:59240 PDATATF - C_MOVE_RSP
+Presentation Context ID: 1
+(0000,0002),UI,28,AffectedSOPClassUID	"1.2.840.10008.5.1.4.1.2.2.2"
+(0000,0100),US,2,CommandField	32801 
+(0000,0120),US,2,MessageIDBeingRespondedTo	0001 
+(0000,0800),US,2,DataSetType	0257 
+(0000,0900),US,2,Status	65280 
+(0000,1020),US,2,NumberofRemainingSub-operations	0011 
+(0000,1021),US,2,NumberofCompletedSub-operations	0016 
+(0000,1022),US,2,NumberofFailedSub-operations	0000 
+(0000,1023),US,2,NumberofWarningSub-operations	0000 
+
+[2018-01-31 09:17:07] - 
+127.0.0.1:106 ---> 192.168.1.100:59240 PDATATF - C_MOVE_RSP
+Presentation Context ID: 1
+(0000,0002),UI,28,AffectedSOPClassUID	"1.2.840.10008.5.1.4.1.2.2.2"
+(0000,0100),US,2,CommandField	32801 
+(0000,0120),US,2,MessageIDBeingRespondedTo	0001 
+(0000,0800),US,2,DataSetType	0257 
+(0000,0900),US,2,Status	65280 
+(0000,1020),US,2,NumberofRemainingSub-operations	0010 
+(0000,1021),US,2,NumberofCompletedSub-operations	0017 
+(0000,1022),US,2,NumberofFailedSub-operations	0000 
+(0000,1023),US,2,NumberofWarningSub-operations	0000 
+
+[2018-01-31 09:17:07] - 
+127.0.0.1:106 ---> 192.168.1.100:59240 PDATATF - C_MOVE_RSP
+Presentation Context ID: 1
+(0000,0002),UI,28,AffectedSOPClassUID	"1.2.840.10008.5.1.4.1.2.2.2"
+(0000,0100),US,2,CommandField	32801 
+(0000,0120),US,2,MessageIDBeingRespondedTo	0001 
+(0000,0800),US,2,DataSetType	0257 
+(0000,0900),US,2,Status	65280 
+(0000,1020),US,2,NumberofRemainingSub-operations	0009 
+(0000,1021),US,2,NumberofCompletedSub-operations	0018 
+(0000,1022),US,2,NumberofFailedSub-operations	0000 
+(0000,1023),US,2,NumberofWarningSub-operations	0000 
+
+[2018-01-31 09:17:07] - 
+127.0.0.1:106 ---> 192.168.1.100:59240 PDATATF - C_MOVE_RSP
+Presentation Context ID: 1
+(0000,0002),UI,28,AffectedSOPClassUID	"1.2.840.10008.5.1.4.1.2.2.2"
+(0000,0100),US,2,CommandField	32801 
+(0000,0120),US,2,MessageIDBeingRespondedTo	0001 
+(0000,0800),US,2,DataSetType	0257 
+(0000,0900),US,2,Status	65280 
+(0000,1020),US,2,NumberofRemainingSub-operations	0008 
+(0000,1021),US,2,NumberofCompletedSub-operations	0019 
+(0000,1022),US,2,NumberofFailedSub-operations	0000 
+(0000,1023),US,2,NumberofWarningSub-operations	0000 
+
+[2018-01-31 09:17:07] - 
+127.0.0.1:106 ---> 192.168.1.100:59240 PDATATF - C_MOVE_RSP
+Presentation Context ID: 1
+(0000,0002),UI,28,AffectedSOPClassUID	"1.2.840.10008.5.1.4.1.2.2.2"
+(0000,0100),US,2,CommandField	32801 
+(0000,0120),US,2,MessageIDBeingRespondedTo	0001 
+(0000,0800),US,2,DataSetType	0257 
+(0000,0900),US,2,Status	65280 
+(0000,1020),US,2,NumberofRemainingSub-operations	0007 
+(0000,1021),US,2,NumberofCompletedSub-operations	0020 
+(0000,1022),US,2,NumberofFailedSub-operations	0000 
+(0000,1023),US,2,NumberofWarningSub-operations	0000 
+
+[2018-01-31 09:17:07] - 
+127.0.0.1:106 ---> 192.168.1.100:59240 PDATATF - C_MOVE_RSP
+Presentation Context ID: 1
+(0000,0002),UI,28,AffectedSOPClassUID	"1.2.840.10008.5.1.4.1.2.2.2"
+(0000,0100),US,2,CommandField	32801 
+(0000,0120),US,2,MessageIDBeingRespondedTo	0001 
+(0000,0800),US,2,DataSetType	0257 
+(0000,0900),US,2,Status	65280 
+(0000,1020),US,2,NumberofRemainingSub-operations	0006 
+(0000,1021),US,2,NumberofCompletedSub-operations	0021 
+(0000,1022),US,2,NumberofFailedSub-operations	0000 
+(0000,1023),US,2,NumberofWarningSub-operations	0000 
+
+[2018-01-31 09:17:07] - 
+127.0.0.1:106 ---> 192.168.1.100:59240 PDATATF - C_MOVE_RSP
+Presentation Context ID: 1
+(0000,0002),UI,28,AffectedSOPClassUID	"1.2.840.10008.5.1.4.1.2.2.2"
+(0000,0100),US,2,CommandField	32801 
+(0000,0120),US,2,MessageIDBeingRespondedTo	0001 
+(0000,0800),US,2,DataSetType	0257 
+(0000,0900),US,2,Status	65280 
+(0000,1020),US,2,NumberofRemainingSub-operations	0005 
+(0000,1021),US,2,NumberofCompletedSub-operations	0022 
+(0000,1022),US,2,NumberofFailedSub-operations	0000 
+(0000,1023),US,2,NumberofWarningSub-operations	0000 
+
+[2018-01-31 09:17:07] - 
+127.0.0.1:106 ---> 192.168.1.100:59240 PDATATF - C_MOVE_RSP
+Presentation Context ID: 1
+(0000,0002),UI,28,AffectedSOPClassUID	"1.2.840.10008.5.1.4.1.2.2.2"
+(0000,0100),US,2,CommandField	32801 
+(0000,0120),US,2,MessageIDBeingRespondedTo	0001 
+(0000,0800),US,2,DataSetType	0257 
+(0000,0900),US,2,Status	65280 
+(0000,1020),US,2,NumberofRemainingSub-operations	0004 
+(0000,1021),US,2,NumberofCompletedSub-operations	0023 
+(0000,1022),US,2,NumberofFailedSub-operations	0000 
+(0000,1023),US,2,NumberofWarningSub-operations	0000 
+
+[2018-01-31 09:17:07] - 
+127.0.0.1:106 ---> 192.168.1.100:59240 PDATATF - C_MOVE_RSP
+Presentation Context ID: 1
+(0000,0002),UI,28,AffectedSOPClassUID	"1.2.840.10008.5.1.4.1.2.2.2"
+(0000,0100),US,2,CommandField	32801 
+(0000,0120),US,2,MessageIDBeingRespondedTo	0001 
+(0000,0800),US,2,DataSetType	0257 
+(0000,0900),US,2,Status	65280 
+(0000,1020),US,2,NumberofRemainingSub-operations	0003 
+(0000,1021),US,2,NumberofCompletedSub-operations	0024 
+(0000,1022),US,2,NumberofFailedSub-operations	0000 
+(0000,1023),US,2,NumberofWarningSub-operations	0000 
+
+[2018-01-31 09:17:07] - 
+127.0.0.1:106 ---> 192.168.1.100:59240 PDATATF - C_MOVE_RSP
+Presentation Context ID: 1
+(0000,0002),UI,28,AffectedSOPClassUID	"1.2.840.10008.5.1.4.1.2.2.2"
+(0000,0100),US,2,CommandField	32801 
+(0000,0120),US,2,MessageIDBeingRespondedTo	0001 
+(0000,0800),US,2,DataSetType	0257 
+(0000,0900),US,2,Status	65280 
+(0000,1020),US,2,NumberofRemainingSub-operations	0002 
+(0000,1021),US,2,NumberofCompletedSub-operations	0025 
+(0000,1022),US,2,NumberofFailedSub-operations	0000 
+(0000,1023),US,2,NumberofWarningSub-operations	0000 
+
+[2018-01-31 09:17:07] - 
+127.0.0.1:106 ---> 192.168.1.100:59240 PDATATF - C_MOVE_RSP
+Presentation Context ID: 1
+(0000,0002),UI,28,AffectedSOPClassUID	"1.2.840.10008.5.1.4.1.2.2.2"
+(0000,0100),US,2,CommandField	32801 
+(0000,0120),US,2,MessageIDBeingRespondedTo	0001 
+(0000,0800),US,2,DataSetType	0257 
+(0000,0900),US,2,Status	65280 
+(0000,1020),US,2,NumberofRemainingSub-operations	0001 
+(0000,1021),US,2,NumberofCompletedSub-operations	0026 
+(0000,1022),US,2,NumberofFailedSub-operations	0000 
+(0000,1023),US,2,NumberofWarningSub-operations	0000 
+
+[2018-01-31 09:17:07] - 
+127.0.0.1:106 ---> 192.168.1.100:59240 PDATATF - C_MOVE_RSP
+Presentation Context ID: 1
+(0000,0002),UI,28,AffectedSOPClassUID	"1.2.840.10008.5.1.4.1.2.2.2"
+(0000,0100),US,2,CommandField	32801 
+(0000,0120),US,2,MessageIDBeingRespondedTo	0001 
+(0000,0800),US,2,DataSetType	0257 
+(0000,0900),US,2,Status	0000 
+(0000,1020),US,2,NumberofRemainingSub-operations	0000 
+(0000,1021),US,2,NumberofCompletedSub-operations	0027 
+(0000,1022),US,2,NumberofFailedSub-operations	0000 
+(0000,1023),US,2,NumberofWarningSub-operations	0000 
+
+[2018-01-31 09:17:07] - 
+192.168.1.100:59240 ---> 127.0.0.1:106 AR_RQ
+Length: 4 Reserved2: 0x0
+
+[2018-01-31 09:17:07] - 
+127.0.0.1:106 ---> 192.168.1.100:59240 AR_RP
+Length: 4 Reserved2: 0x0
+
+
