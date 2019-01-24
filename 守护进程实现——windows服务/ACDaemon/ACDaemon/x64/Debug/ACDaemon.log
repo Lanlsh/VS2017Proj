@@ -1,8 +1,0 @@
-﻿  pch.cpp
-  ACDaemon.cpp
-  Daemon.cpp
-  PipeServerByOL.cpp
-e:\lanliangsheng\vs2017proj\守护进程实现——windows服务\acdaemon\acdaemon\pipeserverbyol.cpp(368): warning C4311: “类型强制转换”: 从“HANDLE”到“int”的指针截断
-e:\lanliangsheng\vs2017proj\守护进程实现——windows服务\acdaemon\acdaemon\pipeserverbyol.cpp(368): warning C4302: “类型强制转换”: 从“HANDLE”到“int”截断
-  正在生成代码...
-  ACDaemon.vcxproj -> E:\lanliangsheng\VS2017Proj\守护进程实现——windows服务\ACDaemon\x64\Debug\ACDaemon.exe
