@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{0b07a6f0-c861-4293-bcb2-7f90ab49740a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="business">
+      <UniqueIdentifier>{e19fc28f-77ce-48bb-9798-a1bcd93a0044}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pluginCommon">
+      <UniqueIdentifier>{278ae0f8-26a5-4805-96ba-5be189949f58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="plugin">
+      <UniqueIdentifier>{032fca90-4829-4ed2-8d8a-b3570cf33a99}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="business\ACBusinessManager.cpp">
+      <Filter>business</Filter>
+    </ClCompile>
+    <ClCompile Include="business\ACJsonInterpreter.cpp">
+      <Filter>business</Filter>
+    </ClCompile>
+    <ClCompile Include="plugin\pluginCommon\ACPluginBase.cpp">
+      <Filter>pluginCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="plugin\pluginCommon\ACPluginInputInterfaceBase.cpp">
+      <Filter>pluginCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="plugin\pluginCommon\ACPluginInterface.cpp">
+      <Filter>pluginCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="plugin\pluginCommon\ACPluginOutputInterfaceBase.cpp">
+      <Filter>pluginCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="plugin\pluginCommon\ACPluginOutputForCheckDose.cpp">
+      <Filter>pluginCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="plugin\ACPluginManager.cpp">
+      <Filter>plugin</Filter>
+    </ClCompile>
+    <ClCompile Include="plugin\ACPluginManagerPrivate.cpp">
+      <Filter>plugin</Filter>
+    </ClCompile>
+    <ClCompile Include="plugin\pluginCommon\ACPluginInputForCheckDose.cpp">
+      <Filter>pluginCommon</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="common\AccuCheckCommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="business\ACJsonInterpreter.h">
+      <Filter>business</Filter>
+    </ClInclude>
+    <ClInclude Include="plugin\pluginCommon\ACPluginOutputForCheckDose.h">
+      <Filter>pluginCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="plugin\ACPluginManager.h">
+      <Filter>plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="plugin\ACPluginManagerPrivate.h">
+      <Filter>plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="plugin\pluginCommon\ACPluginInputForCheckDose.h">
+      <Filter>pluginCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="plugin\pluginCommon\ACPluginInterface.h">
+      <Filter>pluginCommon</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="plugin\pluginCommon\ACPluginBase.h">
+      <Filter>pluginCommon</Filter>
+    </QtMoc>
+    <QtMoc Include="plugin\pluginCommon\ACPluginInputInterfaceBase.h">
+      <Filter>pluginCommon</Filter>
+    </QtMoc>
+    <QtMoc Include="plugin\pluginCommon\ACPluginOutputInterfaceBase.h">
+      <Filter>pluginCommon</Filter>
+    </QtMoc>
+    <QtMoc Include="business\ACBusinessManager.h">
+      <Filter>business</Filter>
+    </QtMoc>
+  </ItemGroup>
+</Project>
