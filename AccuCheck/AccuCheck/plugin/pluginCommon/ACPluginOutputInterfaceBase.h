@@ -2,15 +2,27 @@
 /*
     Desc: 插件输出接口的基类
 */
-#include <QObject>
+#include "ACIOInterface.h"
+#include <QString>
 
-class ACPluginOutputInterfaceBase: public QObject
+class ACPluginOutputInterfaceBase: public ACIOInterface
 {
-    Q_OBJECT
-
 public:
-    ACPluginOutputInterfaceBase(QString name);
+    ACPluginOutputInterfaceBase();
     virtual ~ACPluginOutputInterfaceBase();
+
+    /*
+        Desc: 深拷贝函数
+    */
+    ACPluginOutputInterfaceBase(const ACPluginOutputInterfaceBase& base);
+
+    /*
+        Desc: 克隆模式
+    */
+    virtual ACIOInterface* Clone()
+    {
+        return new ACPluginOutputInterfaceBase(*this);
+    }
 
     /*
         Desc: 设置检查类型的名字
@@ -27,7 +39,7 @@ public:
         Param: void
         Return: QString
     */
-    QString GetCheckName()
+    QString GetCheckName() const
     {
         return m_checkName;
     }
@@ -47,7 +59,7 @@ public:
         Param: void
         Return: bool 是否正常
     */
-    bool GetCheckProcessIsNormal()
+    bool GetCheckProcessIsNormal() const
     {
         return m_bCheckProcessIsNormal;
     }
@@ -67,7 +79,7 @@ public:
         Param: void
         Return: QString 错误信息
     */
-    QString GetErrorMsg()
+    QString GetErrorMsg() const
     {
         return m_errorMsg;
     }

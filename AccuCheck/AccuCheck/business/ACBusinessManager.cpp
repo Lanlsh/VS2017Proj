@@ -11,6 +11,7 @@
 #include <QDebug>
 #include <QPluginLoader>
 #include <QList>
+#include <functional>
 
 ACBusinessManager::ACBusinessManager()
 {
@@ -52,7 +53,7 @@ bool ACBusinessManager::CheckIsSupportForTheInputCheckName(QString checkName)
     return false;
 }
 
-void ACBusinessManager::DoCheck(ACPluginInputInterfaceBase* inputData, void(*callback)(ACPluginOutputInterfaceBase*))
+void ACBusinessManager::DoCheck(ACPluginInputInterfaceBase* inputData, ACPluginOutputInterfaceBase* outputData)
 {
     QString checkName = inputData->GetCheckName();
 
@@ -67,13 +68,14 @@ void ACBusinessManager::DoCheck(ACPluginInputInterfaceBase* inputData, void(*cal
         }
 
         //设置输入数据接口
-        ACPluginInputInterfaceBase* newInputData = inputData->Clone();
-        plugin->SetInputIterface(newInputData);
+        ACIOInterface* newInputData = inputData->Clone();
+        plugin->SetInputIterface(dynamic_cast<ACPluginInputInterfaceBase*>(newInputData));
         //设置输出数据接口
-        ACPluginOutputForCheckDose* outPutData = new ACPluginOutputForCheckDose(checkName);
-        plugin->SetOutputIterface(outPutData);
+        ACIOInterface* newOutPutData = outputData->Clone();
+        plugin->SetOutputIterface(dynamic_cast<ACPluginOutputInterfaceBase*>(newOutPutData));
         //设置检测回调函数
-        plugin->SetResultCallback(callback);
+        CallbackFunForCheckResult callbackFun = std::bind(&ACBusinessManager::CallbackForCheckResult, this, std::placeholders::_1);
+        plugin->SetResultCallback(callbackFun);
         //执行任务
         plugin->DoCheck();
     }
@@ -95,4 +97,16 @@ void ACBusinessManager::LoadPlugs()
 ACPluginBase* ACBusinessManager::GetPluginByCheckName(QString name)
 {
     return m_pluginManager->GetPluginByCheckName(name);
+}
+
+void ACBusinessManager::CallbackForCheckResult(ACPluginOutputInterfaceBase* ouputData)
+{
+    qDebug("检查结果： ");
+    qDebug() << "检查类型名字： " << ouputData->GetCheckName();
+    qDebug() << "检查过程中是否正常： " << ouputData->GetCheckProcessIsNormal();
+    qDebug() << "检查过程中的错误信息： " << ouputData->GetErrorMsg();
+    //将检查结果添加到队列
+    m_mtxForCheckResultQueue.lock();
+    m_queueForcheckResult.push_back( dynamic_cast<ACPluginOutputInterfaceBase*>(ouputData->Clone()) );
+    m_mtxForCheckResultQueue.unlock();
 }

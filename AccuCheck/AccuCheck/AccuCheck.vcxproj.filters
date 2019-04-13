@@ -30,11 +30,11 @@
     <Filter Include="business">
       <UniqueIdentifier>{e19fc28f-77ce-48bb-9798-a1bcd93a0044}</UniqueIdentifier>
     </Filter>
-    <Filter Include="pluginCommon">
-      <UniqueIdentifier>{278ae0f8-26a5-4805-96ba-5be189949f58}</UniqueIdentifier>
-    </Filter>
     <Filter Include="plugin">
       <UniqueIdentifier>{032fca90-4829-4ed2-8d8a-b3570cf33a99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pluginCommon">
+      <UniqueIdentifier>{33189617-0a74-4e35-ab5a-8030654c9539}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -47,7 +47,16 @@
     <ClCompile Include="business\ACJsonInterpreter.cpp">
       <Filter>business</Filter>
     </ClCompile>
+    <ClCompile Include="plugin\ACPluginManager.cpp">
+      <Filter>plugin</Filter>
+    </ClCompile>
+    <ClCompile Include="plugin\ACPluginManagerPrivate.cpp">
+      <Filter>plugin</Filter>
+    </ClCompile>
     <ClCompile Include="plugin\pluginCommon\ACPluginBase.cpp">
+      <Filter>pluginCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="plugin\pluginCommon\ACPluginInputForCheckDose.cpp">
       <Filter>pluginCommon</Filter>
     </ClCompile>
     <ClCompile Include="plugin\pluginCommon\ACPluginInputInterfaceBase.cpp">
@@ -56,19 +65,13 @@
     <ClCompile Include="plugin\pluginCommon\ACPluginInterface.cpp">
       <Filter>pluginCommon</Filter>
     </ClCompile>
-    <ClCompile Include="plugin\pluginCommon\ACPluginOutputInterfaceBase.cpp">
-      <Filter>pluginCommon</Filter>
-    </ClCompile>
     <ClCompile Include="plugin\pluginCommon\ACPluginOutputForCheckDose.cpp">
       <Filter>pluginCommon</Filter>
     </ClCompile>
-    <ClCompile Include="plugin\ACPluginManager.cpp">
-      <Filter>plugin</Filter>
+    <ClCompile Include="plugin\pluginCommon\ACPluginOutputInterfaceBase.cpp">
+      <Filter>pluginCommon</Filter>
     </ClCompile>
-    <ClCompile Include="plugin\ACPluginManagerPrivate.cpp">
-      <Filter>plugin</Filter>
-    </ClCompile>
-    <ClCompile Include="plugin\pluginCommon\ACPluginInputForCheckDose.cpp">
+    <ClCompile Include="plugin\pluginCommon\ACIOInterface.cpp">
       <Filter>pluginCommon</Filter>
     </ClCompile>
   </ItemGroup>
@@ -78,9 +81,6 @@
     </ClInclude>
     <ClInclude Include="business\ACJsonInterpreter.h">
       <Filter>business</Filter>
-    </ClInclude>
-    <ClInclude Include="plugin\pluginCommon\ACPluginOutputForCheckDose.h">
-      <Filter>pluginCommon</Filter>
     </ClInclude>
     <ClInclude Include="plugin\ACPluginManager.h">
       <Filter>plugin</Filter>
@@ -94,19 +94,25 @@
     <ClInclude Include="plugin\pluginCommon\ACPluginInterface.h">
       <Filter>pluginCommon</Filter>
     </ClInclude>
+    <ClInclude Include="plugin\pluginCommon\ACPluginOutputForCheckDose.h">
+      <Filter>pluginCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="plugin\pluginCommon\ACIOInterface.h">
+      <Filter>pluginCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="plugin\pluginCommon\ACPluginInputInterfaceBase.h">
+      <Filter>pluginCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="plugin\pluginCommon\ACPluginOutputInterfaceBase.h">
+      <Filter>pluginCommon</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <QtMoc Include="plugin\pluginCommon\ACPluginBase.h">
-      <Filter>pluginCommon</Filter>
-    </QtMoc>
-    <QtMoc Include="plugin\pluginCommon\ACPluginInputInterfaceBase.h">
-      <Filter>pluginCommon</Filter>
-    </QtMoc>
-    <QtMoc Include="plugin\pluginCommon\ACPluginOutputInterfaceBase.h">
-      <Filter>pluginCommon</Filter>
-    </QtMoc>
     <QtMoc Include="business\ACBusinessManager.h">
       <Filter>business</Filter>
+    </QtMoc>
+    <QtMoc Include="plugin\pluginCommon\ACPluginBase.h">
+      <Filter>pluginCommon</Filter>
     </QtMoc>
   </ItemGroup>
 </Project>

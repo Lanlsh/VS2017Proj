@@ -5,11 +5,13 @@
 
 #include <QObject>
 #include "ACPluginInterface.h"
+#include <functional>
 
 class ACPluginInputInterfaceBase;
 class ACPluginOutputInterfaceBase;
 
-typedef void(*CallbackFunForCheckResult)(ACPluginOutputInterfaceBase*);
+//typedef void(*CallbackFunForCheckResult)(ACPluginOutputInterfaceBase*);
+typedef std::function< void(ACPluginOutputInterfaceBase*) > CallbackFunForCheckResult;
 
 class ACPluginBase: public QObject, public ACPluginInterface
 {

@@ -19,7 +19,7 @@ public:
     /*
         Desc: 克隆模式
     */
-    ACPluginInputInterfaceBase* Clone()
+    ACIOInterface* Clone()
     {
         return new ACPluginInputForCheckDose(*this);
     }

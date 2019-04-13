@@ -102,6 +102,7 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="plugin\ACPluginManager.cpp" />
     <ClCompile Include="plugin\ACPluginManagerPrivate.cpp" />
+    <ClCompile Include="plugin\pluginCommon\ACIOInterface.cpp" />
     <ClCompile Include="plugin\pluginCommon\ACPluginBase.cpp" />
     <ClCompile Include="plugin\pluginCommon\ACPluginInputForCheckDose.cpp" />
     <ClCompile Include="plugin\pluginCommon\ACPluginInputInterfaceBase.cpp" />
@@ -112,15 +113,16 @@
   <ItemGroup>
     <ClInclude Include="plugin\ACPluginManager.h" />
     <ClInclude Include="plugin\ACPluginManagerPrivate.h" />
+    <ClInclude Include="plugin\pluginCommon\ACIOInterface.h" />
     <ClInclude Include="plugin\pluginCommon\ACPluginInputForCheckDose.h" />
+    <ClInclude Include="plugin\pluginCommon\ACPluginInterface.h" />
     <ClInclude Include="plugin\pluginCommon\ACPluginOutputForCheckDose.h" />
+    <ClInclude Include="plugin\pluginCommon\ACPluginOutputInterfaceBase.h" />
+    <ClInclude Include="plugin\pluginCommon\ACPluginInputInterfaceBase.h" />
+    <QtMoc Include="plugin\pluginCommon\ACPluginBase.h" />
     <QtMoc Include="business\ACBusinessManager.h" />
     <ClInclude Include="business\ACJsonInterpreter.h" />
     <ClInclude Include="common\AccuCheckCommon.h" />
-    <ClInclude Include="plugin\pluginCommon\ACPluginInterface.h" />
-    <QtMoc Include="plugin\pluginCommon\ACPluginOutputInterfaceBase.h" />
-    <QtMoc Include="plugin\pluginCommon\ACPluginInputInterfaceBase.h" />
-    <QtMoc Include="plugin\pluginCommon\ACPluginBase.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">

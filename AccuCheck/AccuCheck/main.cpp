@@ -2,11 +2,7 @@
 //#include "./plugin/ACPluginManager.h"
 #include "./business/ACBusinessManager.h"
 #include "./plugin/pluginCommon/ACPluginInputForCheckDose.h"
-#include "./plugin/pluginCommon/ACPluginOutputInterfaceBase.h"
-
-void ResultForCheckDose(ACPluginOutputInterfaceBase* output)
-{
-}
+#include "./plugin/pluginCommon/ACPluginOutputForCheckDose.h"
 
 int main(int argc, char* argv[])
 {
@@ -17,6 +13,8 @@ int main(int argc, char* argv[])
     ACPluginInputForCheckDose inputData;
     inputData.SetCheckName("checkdose");
     inputData.SetPlanPath("E:/QA/MonacoPatient/MonacoPatient/1~L6MRLRANDO/plan/Prostate/plan");
-    manager.DoCheck(&inputData, &ResultForCheckDose);
+    ACPluginOutputForCheckDose outputData;
+    outputData.SetCheckName("checkdose");
+    manager.DoCheck(&inputData, &outputData);
     return a.exec();
 }

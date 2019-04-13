@@ -3,6 +3,7 @@
     Desc: AccuCheck的业务管理类
 */
 #include <QObject>
+#include <QQueue>
 
 class ACPluginManager;
 class ACPluginInputInterfaceBase;
@@ -31,10 +32,10 @@ public:
     /*
         Desc: DoCheck
         Param: inputData 输入接口信息
-        Param:
-        Param: void(*callback)(ACPluginOutputInterfaceBase*) 检测完的回调函数
+        Param: outputData 输出接口信息
+        Return: void
     */
-    void DoCheck(ACPluginInputInterfaceBase* inputData, void(*callback)(ACPluginOutputInterfaceBase*) );
+    void DoCheck(ACPluginInputInterfaceBase* inputData, ACPluginOutputInterfaceBase* outputData);
 
 protected:
     /*
@@ -54,7 +55,14 @@ protected:
     */
     ACPluginBase* GetPluginByCheckName(QString name);
 
+    /*
+        Desc: 检查结果回调函数
+        Param: void
+    */
+    void CallbackForCheckResult(ACPluginOutputInterfaceBase* ouputData);
+
 private:
     ACPluginManager* m_pluginManager;   //插件管理者
+    QQueue<ACPluginOutputInterfaceBase* > m_queueForcheckResult;    //检查结果队列，此队列保存所有的输出结果
 };
 
