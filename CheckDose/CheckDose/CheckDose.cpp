@@ -63,7 +63,7 @@ void CheckDose::slotContourProgress()
 
 void CheckDose::RecordCheckResult()
 {
-    QFile loadFile("D:/temp/MuInfo.json");
+    QFile loadFile("C:/temp/MuInfo.json");
 
     if (!loadFile.open(QIODevice::ReadOnly))
     {

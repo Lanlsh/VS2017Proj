@@ -97,6 +97,7 @@
     </QtMoc>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\AccuCheck\AccuCheck\plugin\pluginCommon\ACIOInterface.cpp" />
     <ClCompile Include="..\..\AccuCheck\AccuCheck\plugin\pluginCommon\ACPluginBase.cpp" />
     <ClCompile Include="..\..\AccuCheck\AccuCheck\plugin\pluginCommon\ACPluginInputForCheckDose.cpp" />
     <ClCompile Include="..\..\AccuCheck\AccuCheck\plugin\pluginCommon\ACPluginInputInterfaceBase.cpp" />
@@ -109,6 +110,7 @@
     <QtMoc Include="CheckDose.h" />
     <QtMoc Include="..\..\AccuCheck\AccuCheck\plugin\pluginCommon\ACPluginBase.h" />
     <QtMoc Include="..\..\AccuCheck\AccuCheck\plugin\pluginCommon\ACPluginInputInterfaceBase.h" />
+    <ClInclude Include="..\..\AccuCheck\AccuCheck\plugin\pluginCommon\ACIOInterface.h" />
     <ClInclude Include="..\..\AccuCheck\AccuCheck\plugin\pluginCommon\ACPluginInputForCheckDose.h" />
     <ClInclude Include="..\..\AccuCheck\AccuCheck\plugin\pluginCommon\ACPluginInterface.h" />
     <QtMoc Include="..\..\AccuCheck\AccuCheck\plugin\pluginCommon\ACPluginOutputInterfaceBase.h" />

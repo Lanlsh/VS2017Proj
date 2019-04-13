@@ -50,6 +50,9 @@
     <ClCompile Include="..\..\AccuCheck\AccuCheck\plugin\pluginCommon\ACPluginInputForCheckDose.cpp">
       <Filter>plugin</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\AccuCheck\AccuCheck\plugin\pluginCommon\ACIOInterface.cpp">
+      <Filter>plugin</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="checkdose_global.h">
@@ -62,6 +65,9 @@
       <Filter>plugin</Filter>
     </ClInclude>
     <ClInclude Include="..\..\AccuCheck\AccuCheck\plugin\pluginCommon\ACPluginInputForCheckDose.h">
+      <Filter>plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\AccuCheck\AccuCheck\plugin\pluginCommon\ACIOInterface.h">
       <Filter>plugin</Filter>
     </ClInclude>
   </ItemGroup>
